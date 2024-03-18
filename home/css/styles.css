@@ -382,11 +382,13 @@ input[type='checkbox'] {
 .navbar .navbar-brand {
 	padding-top: 0.125rem;
 	padding-bottom: 0.125rem;
+	text-decoration: none;
 }
 
 .navbar .logo-image img {
-    width: 36px;
-	height: 36px;
+    width: 60px;
+	height: 60px;
+	margin-right: 10px;
 }
 
 .navbar .logo-text {
@@ -399,7 +401,7 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 5rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -1205,7 +1207,7 @@ a:hover.back-to-top {
 
 	/* General Styles */
 	.h1-large {
-		font-size: 3.5rem;
+		font-size: 3.25rem;
 		line-height: 4.625rem;
 	}
 	/* end of general styles */
