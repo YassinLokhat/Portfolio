@@ -621,14 +621,14 @@ input[type='checkbox'] {
 /*     Details     */
 /*******************/
 .split .area-1 {
-	height: 430px;
+	height: 530px;
 	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 .split .area-2 {
-	padding-top: 7.75rem;
-	padding-bottom: 7.75rem;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
 }
 
 .split p {
@@ -1246,7 +1246,7 @@ a:hover.back-to-top {
 
 	/* Details */
 	.split {
-		height: 700px;
+		height: 1200px;
 	}
 
 	.split .text-container {
