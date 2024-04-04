@@ -22,11 +22,11 @@ Table Of Contents:
 
 /*****************************************
 Colors:
-- Backgrounds, navbar - black #24262a
-- Backgrounds - light gray #f7f9fb
-- Buttons, icons - blue #0b36a8
-- Headings text - black #24262a
-- Body text - dark gray #4d5055
+- Backgrounds, navbar - black #000000
+- Backgrounds - light gray #eeeeee
+- Buttons, icons - blue #2f67ff
+- Headings text - black #000000
+- Body text - dark gray #333333
 ******************************************/
 
 
@@ -40,12 +40,12 @@ html {
 }
 
 body, p {
-	color: #4d5055; 
+	color: #333333; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
 h1 {
-	color: #24262a;
+	color: #000000;
 	font-weight: 700;
 	font-size: 2.5rem;
 	line-height: 3.25rem;
@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-	color: #24262a;
+	color: #000000;
 	font-weight: 700;
 	font-size: 2rem;
 	line-height: 2.5rem;
@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-	color: #24262a;
+	color: #000000;
 	font-weight: 700;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
@@ -69,7 +69,7 @@ h3 {
 }
 
 h4 {
-	color: #24262a;
+	color: #000000;
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2rem;
@@ -77,7 +77,7 @@ h4 {
 }
 
 h5 {
-	color: #24262a;
+	color: #000000;
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
@@ -85,7 +85,7 @@ h5 {
 }
 
 h6 {
-	color: #24262a;
+	color: #000000;
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.375rem;
@@ -117,12 +117,12 @@ h6 {
 }
 
 a {
-	color: #4d5055;
+	color: #333333;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #4d5055;
+	color: #333333;
 	text-decoration: underline;
 }
 
@@ -139,7 +139,7 @@ a:hover {
 }
 
 .bg-gray {
-	background-color: #f7f9fb;
+	background-color: #eeeeee;
 }
 
 .section-divider {
@@ -153,8 +153,8 @@ a:hover {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
+	border: 1px solid #2f67ff;
+	background-color: #2f67ff;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -165,15 +165,15 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+	color: #2f67ff; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
+	border: 1px solid #2f67ff;
+	background-color: #2f67ff;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -184,16 +184,16 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+	color: #2f67ff; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #24262a;
+	border: 1px solid #000000;
 	background-color: transparent;
-	color: #24262a;
+	color: #000000;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -202,7 +202,7 @@ a:hover {
 }
 
 .btn-outline-reg:hover {
-	background-color: #24262a;
+	background-color: #000000;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -210,9 +210,9 @@ a:hover {
 .btn-outline-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #24262a;
+	border: 1px solid #000000;
 	background-color: transparent;
-	color: #24262a;
+	color: #000000;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -221,7 +221,7 @@ a:hover {
 }
 
 .btn-outline-lg:hover {
-	background-color: #24262a;
+	background-color: #000000;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -229,9 +229,9 @@ a:hover {
 .btn-outline-sm {
 	display: inline-block;
 	padding: 1rem 1.5rem 1rem 1.5rem;
-	border: 1px solid #24262a;
+	border: 1px solid #000000;
 	background-color: transparent;
-	color: #24262a;
+	color: #000000;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -240,7 +240,7 @@ a:hover {
 }
 
 .btn-outline-sm:hover {
-	background-color: #24262a;
+	background-color: #000000;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -267,7 +267,7 @@ a:hover {
 .form-control-textarea:focus + .label-control,
 .form-control-textarea.notEmpty + .label-control {
 	top: 0.125rem;
-	color: #4d5055;
+	color: #333333;
 	opacity: 1;
 	font-size: 0.75rem;
 	font-weight: 700;
@@ -282,7 +282,7 @@ a:hover {
 	padding-left: 1.5rem;
 	border: 1px solid #cbcbd1;
 	background-color: #ffffff;
-	color: #4d5055;
+	color: #333333;
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
@@ -317,7 +317,7 @@ select {
 	padding-left: 1.3125rem;
 	border: 1px solid #cbcbd1;
 	background-color: #ffffff;
-	color: #4d5055;
+	color: #333333;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
 	transition: all 0.2s;
@@ -350,9 +350,9 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #0b36a8;
+	border: 1px solid #2f67ff;
 	border-radius: 32px;
-	background-color: #0b36a8;
+	background-color: #2f67ff;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -362,9 +362,9 @@ input[type='checkbox'] {
 }
 
 .form-control-submit-button:hover {
-	border: 1px solid #24262a;
+	border: 1px solid #000000;
 	background-color: transparent;
-	color: #24262a;
+	color: #000000;
 }
 
 
@@ -372,7 +372,7 @@ input[type='checkbox'] {
 /*     Navigation     */
 /**********************/
 .navbar {
-	background-color: #24262a;
+	background-color: #000000;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -409,7 +409,7 @@ input[type='checkbox'] {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #24262a;
+	background-color: #000000;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -459,7 +459,7 @@ input[type='checkbox'] {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 	border: none;
-	background-color: #24262a;
+	background-color: #000000;
 }
 
 .navbar .dropdown-item {
@@ -473,7 +473,7 @@ input[type='checkbox'] {
 }
 
 .navbar .dropdown-item:hover {
-	background-color: #24262a;
+	background-color: #000000;
 	color: #9c9ead;
 }
 
@@ -493,7 +493,7 @@ input[type='checkbox'] {
 }
 
 .navbar .fa-stack-2x {
-	color: #0b36a8;
+	color: #2f67ff;
 	transition: all 0.2s ease;
 }
 
@@ -507,7 +507,7 @@ input[type='checkbox'] {
 }
 
 .navbar .fa-stack:hover .fa-stack-1x {
-	color: #0b36a8;
+	color: #2f67ff;
 }
 
 .navbar .navbar-toggler {
@@ -569,7 +569,7 @@ input[type='checkbox'] {
 
 .basic-1 .time {
 	margin-bottom: 0.5rem;
-	color: #0b36a8;
+	color: #2f67ff;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
@@ -608,7 +608,7 @@ input[type='checkbox'] {
 .basic-2 .fas,
 .basic-2 .far {
 	margin-bottom: 1.75rem;
-	color: #0b36a8;
+	color: #2f67ff;
 	font-size: 3.5rem;
 }
 
@@ -766,7 +766,7 @@ input[type='checkbox'] {
 }
 
 .cards-1 .testimonial-author {
-	color: #24262a;
+	color: #000000;
 }
 
 .cards-1 .testimonial-author,
@@ -802,7 +802,7 @@ input[type='checkbox'] {
 
 .accordion-1 .card button {
 	padding: 0;
-	color: #24262a;
+	color: #000000;
 	font-weight: 600;
 	font-size: 1.125rem;
 	line-height: 1.75rem;
@@ -858,7 +858,7 @@ input[type='checkbox'] {
 .footer {
 	padding-top: 6.25rem;
 	padding-bottom: 2rem;
-	background-color: #24262a;
+	background-color: #000000;
 	text-align: center;
 }
 
@@ -879,12 +879,12 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack .fa-stack-2x {
-	color: #0b36a8;
+	color: #2f67ff;
 	transition: all 0.2s ease;
 }
 
 .footer .fa-stack:hover .fa-stack-1x {
-	color: #0b36a8;
+	color: #2f67ff;
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
@@ -898,7 +898,7 @@ input[type='checkbox'] {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	background-color: #24262a;
+	background-color: #000000;
 	text-align: center;
 }
 
@@ -930,7 +930,7 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #0b36a8;
+	background-color: #2f67ff;
 }
 
 
@@ -940,7 +940,7 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background-color: #24262a;
+	background-color: #000000;
 }
 
 .ex-header h1 {
@@ -958,7 +958,7 @@ a:hover.back-to-top {
 
 .ex-basic-1 .text-box {
 	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
-	background-color: #f7f9fb;
+	background-color: #eeeeee;
 }
 
 .ex-cards-1 .card {
@@ -972,7 +972,7 @@ a:hover.back-to-top {
 }
 
 .ex-cards-1 .card .fa-stack-2x {
-	color: #0b36a8;
+	color: #2f67ff;
 }
 
 .ex-cards-1 .card .fa-stack-1x {
@@ -1051,7 +1051,7 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-top: 0.5rem;
-		background-color: #24262a;
+		background-color: #000000;
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 	}
 
