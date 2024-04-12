@@ -739,17 +739,14 @@ input[type='checkbox'] {
 }
 
 .cards-1 .card {
-	margin-bottom: 4rem;
-	border: none;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-bottom: 1px solid lightgray;	
 }
 
 .cards-1 .card-body {
 	padding: 0;
 	text-align: center;
-}
-
-.cards-1 .testimonial-text {
-	margin-bottom: 1.625rem;
 }
 
 .cards-1 img {
@@ -1256,11 +1253,18 @@ a:hover.back-to-top {
 	/* Testimonials */
 	.cards-1 .card {
 		width: 338px;
+		height: 340px;
+		border-bottom: 1px solid lightgray;
 	}
 	
 	.cards-1 .card:nth-of-type(3n+2) {
-		margin-right: 2.625rem;
-		margin-left: 2.625rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.cards-1 .testimonial-text {
+		margin-bottom: 1.625rem;
+		height: 165px;
 	}
 	/* end of testimonials */
 	
