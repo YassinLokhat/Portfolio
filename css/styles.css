@@ -741,7 +741,7 @@ input[type='checkbox'] {
 .cards-1 .card {
 	margin-bottom: 1rem;
 	padding: 1rem;
-	border-bottom: 1px solid lightgray;	
+	border: 1px solid lightgray;	
 }
 
 .cards-1 .card-body {
@@ -1259,7 +1259,7 @@ a:hover.back-to-top {
 	.cards-1 .card {
 		width: 338px;
 		height: 340px;
-		border-bottom: 1px solid lightgray;
+		border: 1px solid lightgray;
 	}
 	
 	.cards-1 .card:nth-of-type(3n+2) {
