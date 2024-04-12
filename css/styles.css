@@ -1247,6 +1247,11 @@ a:hover.back-to-top {
 		width: 460px;
 		margin-left: 5rem;
 	}
+
+	.split .area-2 {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
 	/* end of details */
 
 
