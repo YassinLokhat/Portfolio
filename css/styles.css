@@ -183,7 +183,7 @@ a:hover {
 }
 
 .btn-solid-lg:hover {
-	background-color: transparent;
+	background-color: #333333;
 	color: #072575; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
