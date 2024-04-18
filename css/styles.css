@@ -1109,7 +1109,7 @@ a:hover.back-to-top {
 
 	/* Details */
 	.split {
-		height: 760px;
+		height: 1200px;
 	}
 	
 	.split .area-1 {
@@ -1131,17 +1131,30 @@ a:hover.back-to-top {
 	}
 	/* end of details */
 
+	/* Services */
+	.basic-2 .text-box {
+		height: 420px;
+	}
+	/* end of services */
+	
+	/* Details */
+	.split .area-2 {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	/* end of details */
 
 	/* Testimonials */
 	.cards-1 .card {
 		display: inline-block;
 		width: 290px;
+		height: 375px;
 		vertical-align: top;
 	}
 
 	.cards-1 .card:nth-of-type(3n+2) {
-		margin-right: 1.5rem;
-		margin-left: 1.5rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
 	}
 
 	.cards-1 .card-body {
@@ -1159,6 +1172,11 @@ a:hover.back-to-top {
 	
 	.cards-1 .details img {
 		margin-right: 1.125rem;
+	}
+
+	.cards-1 .testimonial-text {
+		margin-bottom: 1.625rem;
+		height: 190px;
 	}
 	/* end of testimonials */
 
@@ -1221,6 +1239,13 @@ a:hover.back-to-top {
 		padding-bottom: 17.25rem;
 	}
 	/* end of header */
+
+
+	/* Services */
+	.basic-2 .text-box {
+		height: 390px;
+	}
+	/* end of services */
 
 
 	/* About */
