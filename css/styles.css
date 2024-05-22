@@ -992,7 +992,7 @@ a:hover.back-to-top {
 	pointer-events: none;
 }
 
-.container a, .container button {
+.container a, .container button, .container img {
 	pointer-events: auto;
 }
 
