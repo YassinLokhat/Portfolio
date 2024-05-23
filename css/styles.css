@@ -1002,7 +1002,7 @@ a:hover.back-to-top {
 	width: 100%;
 }
 
-#passkey-carousel {
+.carousel {
     background: lightgray;
 	border-radius: 10px;
 }
@@ -1024,8 +1024,13 @@ a:hover.back-to-top {
 	margin-top: 1rem;
 }
 
-.carousel-item-content p {
+.carousel-item-content p, .text-container .h3-heading {
 	text-align: center;
+}
+
+.text-container .img-fluid {
+	display: block;
+	margin: auto;
 }
 
 /*************************/
