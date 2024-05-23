@@ -129,7 +129,9 @@
     <div class="ex-basic-1 pt-5 pb-5">
         <div class="container">
             <div class="row">
-				<img class="img-fluid mt-5 mb-3" src="images/development/project-details-large.jpg" alt="alternative">
+                <div class="col-lg-12">
+                    <img class="img-fluid mt-5 mb-3" src="images/development/project-details-large.jpg" alt="alternative">
+                </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
@@ -156,11 +158,13 @@
     <div class="ex-basic-1 pt-4">
         <div class="container">
             <div class="row">
-				<h2 class="mb-4">Let me introduce to you Upsilon Ecosystem</h2>
-				<img class="img-fluid mb-5" src="images/development/project-details-small.jpg" alt="alternative">
-				<p>During the first 2 years of my professional life, I developed a number of tools independently and it was not uncommon to redevelop the same functionality several times because it was common to several of them.</p>
-				<p class="mb-4">It is from this observation that Upsilon Ecosystem was born. It consists of two-part development: Upsilon.Common for the codebase in common to all my projects and Upsilon.Apps for the applications and tools.</p>
-				<p class="mb-4">You can find the Upsilon.Common full documentation <a href="https://upsilonecosystem.yassinlokhat.com/" target="_blank">here</a> and download the latest version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Common/Upsilon.Common.zip" target="_blank">there</a>.</p>
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="mb-4">Let me introduce to you Upsilon Ecosystem</h2>
+                    <img class="img-fluid mb-5" src="images/development/project-details-small.jpg" alt="alternative">
+                    <p>During the first 2 years of my professional life, I developed a number of tools independently and it was not uncommon to redevelop the same functionality several times because it was common to several of them.</p>
+                    <p class="mb-4">It is from this observation that Upsilon Ecosystem was born. It consists of two-part development: Upsilon.Common for the codebase in common to all my projects and Upsilon.Apps for the applications and tools.</p>
+                    <p class="mb-4">You can find the Upsilon.Common full documentation <a href="https://upsilonecosystem.yassinlokhat.com/" target="_blank">here</a> and download the latest version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Common/Upsilon.Common.zip" target="_blank">there</a>.</p>
+                </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
@@ -240,43 +244,80 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h2 class="h2-heading">My developed tools</h2>
-					<p class="p-heading">Listed below are some of the most representative projects I've designed. They range from basic tool like a Qr Code generator to advanced applications like a local password management system.</p>
+					<p class="p-heading">Listed below are some of the most representative projects I've designed.<br/>They range from a simple toolkit regrouping severals little tools to advanced applications like a local password management system.</p>
 				</div> <!-- end of col -->
 			</div> <!-- end of row -->
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-xl-10 offset-xl-1">
 					<div class="text-container">
 						<h3 class="h3-heading">Upsilon.Apps.Passkey</h3>
-						<div class="image-container">
-							<a href="project.html">
-								<img class="img-fluid" src="images/development/project-1.jpg" alt="alternative">
-							</a>
-						</div> <!-- end of image-container -->
-						<p><strong>For:</strong> Jumbotron, <strong>Project:</strong> web design for their corporate websites and landing pages for marketing campaigns <a class="blue" href="project.html">details</a></p>
+						<img class="img-fluid" src="images/development/passkey/user.png" alt="alternative">
+						<p>A fully offline and secured <strong>Password manager</strong>. It supports multiple users, multiple accounts per service, fully customisable password generator and more.</p>
+						<p>Actualy in <strong>version 2.2</strong>, it is available in <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.setup.exe">installer</a> or <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.portable.zip">portable</a> versions.</p>
+						
+						<div class="col-xl-8  offset-xl-2">
+							<div id="passkey-carousel" class="container carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<div class="carousel-item-content">
+											<img class="img-fluid d-block w-100" src="images/development/passkey/login.png" alt="alternative">
+											<p>The minimalist login page</p>
+										</div>
+									</div> <!-- end of col -->
+									<div class="carousel-item">
+										<div class="carousel-item-content">
+											<img class="img-fluid d-block w-100" src="images/development/passkey/setting-passwords.png" alt="alternative">
+											<p>The user login and passwords setting page</p>
+										</div>
+									</div> <!-- end of col -->
+									<div class="carousel-item">
+										<div class="carousel-item-content">
+											<img class="img-fluid d-block w-100" src="images/development/passkey/settings-options.png" alt="alternative">
+											<p>The user options settings page</p>
+										</div>
+									</div> <!-- end of col -->
+									<div class="carousel-item">
+										<div class="carousel-item-content">
+											<img class="img-fluid d-block w-100" src="images/development/passkey/password-generator.png" alt="alternative">
+											<p>The custom password generator page</p>
+										</div>
+									</div> <!-- end of col -->
+									<div class="carousel-item">
+										<div class="carousel-item-content">
+											<img class="img-fluid d-block w-100" src="images/development/passkey/logs.png" alt="alternative">
+											<p>The logs page</p>
+										</div>
+									</div> <!-- end of col -->
+									<div class="carousel-item">
+										<div class="carousel-item-content">
+											<img class="img-fluid d-block w-100" src="images/development/passkey/warnings.png" alt="alternative">
+											<p>The warnings page</p>
+										</div>
+									</div> <!-- end of col -->
+								</div> <!-- end of row -->
+								
+								<a class="carousel-control-prev" href="#passkey-carousel" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#passkey-carousel" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div> <!-- end of container -->
+						</div> <!-- end of basic-4 -->
 					</div> <!-- end of text-container -->
 					<div class="text-container">
-						<div class="image-container">
-							<a href="project.html">
-								<img class="img-fluid" src="images/development/project-2.jpg" alt="alternative">
-							</a>
-						</div> <!-- end of image-container -->
-						<p><strong>For:</strong> Carsrepo, <strong>Project:</strong> designed and developed modern platform for purchasing second hand cars online <a class="blue" href="project.html">details</a></p>
+						<h3 class="h3-heading">Upsilon.Apps.Tools.BaseConverter</h3>
+						<img class="img-fluid" src="images/development/baseconverter.png" alt="alternative">
+						<p>A tool allowing conversion of integer <strong>from any base to any other base</strong> and support <strong>Logical Operators (And, or, Not, Xor, Shift), Addition and Multiplication</strong>. The size of the number is virtualy unlimited.</p>
+						<p>Actualy in <strong>version 2.1.1</strong>, it is available in <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.setup.exe">installer</a> or <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.portable.zip">portable</a> versions.</p>
 					</div> <!-- end of text-container -->
 					<div class="text-container">
-						<div class="image-container">
-							<a href="project.html">
-								<img class="img-fluid" src="images/development/project-3.jpg" alt="alternative">
-							</a>
-						</div> <!-- end of image-container -->
-						<p><strong>For:</strong> Truevideo, <strong>Project:</strong> created a custom video editing and upload web app for this awesome team <a class="blue" href="project.html">details</a></p>
-					</div> <!-- end of text-container -->
-					<div class="text-container">
-						<div class="image-container">
-							<a href="project.html">
-								<img class="img-fluid" src="images/development/project-4.jpg" alt="alternative">
-							</a>
-						</div> <!-- end of image-container -->
-						<p><strong>For:</strong> Evolosim, <strong>Project:</strong> complete redesign of their corporate website and platform update for their online shop <a class="blue" href="project.html">details</a></p>
+						<h3 class="h3-heading">Upsilon.Apps.Tools.Statistics</h3>
+						<img class="img-fluid" src="images/development/statistics.png" alt="alternative">
+						<p>This tool can display a <strong>Comma separated CSV</strong> data file as a <strong>graph with all statistic informations (Minimum, Maximum, Average, etc)</strong>. Each column in the CSV will be displayed on a row in the tool.</p>
+						<p>Actualy in <strong>version 1.1</strong>, it is available in <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.1.0.setup.exe">installer</a> or <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.1.0.portable.zip">portable</a> versions.</p>
 					</div> <!-- end of text-container -->
 				</div> <!-- end of col -->
 			</div> <!-- end of row -->
