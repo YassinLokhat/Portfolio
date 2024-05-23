@@ -992,16 +992,46 @@ a:hover.back-to-top {
 	pointer-events: none;
 }
 
-.container a, .container button {
+.container a, .container button, .container img {
 	pointer-events: auto;
 }
 
-#particles-js{
-  position: fixed;
-  height: 100%;
-  width: 100%;
+#particles-js {
+	position: fixed;
+	height: 100%;
+	width: 100%;
 }
 
+.carousel {
+    background: lightgray;
+	border-radius: 10px;
+}
+
+.carousel-item.active {
+    min-height: 31rem;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	opacity: 1;
+}
+
+.carousel-item {
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.carousel-item-content {
+	margin-top: 1rem;
+}
+
+.carousel-item-content p, .text-container .h3-heading {
+	text-align: center;
+}
+
+.text-container .img-fluid {
+	display: block;
+	margin: auto;
+}
 
 /*************************/
 /*     Media Queries     */
