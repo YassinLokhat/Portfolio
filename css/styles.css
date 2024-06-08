@@ -559,6 +559,11 @@ input[type='checkbox'] {
 /*****************/
 /*     About     */
 /*****************/
+.basic-0 {
+	padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
 .basic-1 {
 	padding-top: 4rem;
     padding-bottom: 1rem;
@@ -1008,7 +1013,7 @@ a:hover.back-to-top {
 }
 
 .carousel-item.active {
-    min-height: 31rem;
+    min-height: 500px;
     display: flex;
     align-items: center;
 	justify-content: center;
@@ -1021,7 +1026,7 @@ a:hover.back-to-top {
 }
 
 .carousel-item-content {
-	margin-top: 1rem;
+    max-height: 420px;
 }
 
 .carousel-item-content p, .text-container .h4-heading {
