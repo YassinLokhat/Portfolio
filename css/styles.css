@@ -1038,6 +1038,10 @@ a:hover.back-to-top {
 	margin: auto;
 }
 
+.center-text {
+	text-align: center;
+}
+
 /*************************/
 /*     Media Queries     */
 /*************************/	
@@ -1381,7 +1385,3 @@ a:hover.back-to-top {
 	}
 }
 /* end of min-width 1200px */
-
-
-
-/* ---- particles.js container ---- */
