@@ -1033,6 +1033,10 @@ a:hover.back-to-top {
 	text-align: center;
 }
 
+.project-container {
+	padding-top: 50px;
+}
+
 .text-container .img-fluid {
 	display: block;
 	margin: auto;
