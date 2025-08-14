@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
 	<!-- HTML Meta Tags -->
-	<title>Yassin Lokhat's Portfolio - Training & Mentoring</title>
-	<meta name="description" content="Would you like to learn something? Check my training area.">
+	<title>Yassin Lokhat's Portfolio - Ginger Beer Brewer</title>
+	<meta name="description" content="Discover my handcrafted local ginger beer, a bold and refreshing blend made with thoughtfully sourced ingredients.">
     <meta name="author" content="Yassin Lokhat">
 
 	<!-- Facebook Meta Tags -->
-	<meta property="og:site_name" content="Yassin Lokhat's Portfolio - Training & Mentoring" />
+	<meta property="og:site_name" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer" />
 	<meta property="og:site" content="https://yassinlokhat.com" />
-	<meta property="og:url" content="https://yassinlokhat.com/teaching.html">
+	<meta property="og:url" content="https://yassinlokhat.com/gingerbeer.html">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Yassin Lokhat's Portfolio - Training & Mentoring">
-	<meta property="og:description" content="Would you like to learn something? Check my training area.">
-	<meta property="og:image" content="https://yassinlokhat.com/images/header-background.jpg">
+	<meta property="og:title" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer">
+	<meta property="og:description" content="Discover my handcrafted local ginger beer, a bold and refreshing blend made with thoughtfully sourced ingredients.">
+	<meta property="og:image" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
 
 	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="https://yassinlokhat.com/images/header-background.jpg">
+	<meta name="twitter:card" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
 	<meta property="twitter:domain" content="yassinlokhat.com">
 	<meta property="twitter:url" content="https://yassinlokhat.com">
-	<meta name="twitter:title" content="Yassin Lokhat's Portfolio - Training & Mentoring">
-	<meta name="twitter:description" content="Would you like to learn something? Check my training area.">
-	<meta name="twitter:image" content="https://yassinlokhat.com/images/header-background.jpg">
+	<meta name="twitter:title" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer">
+	<meta name="twitter:description" content="Discover my handcrafted local ginger beer, a bold and refreshing blend made with thoughtfully sourced ingredients.">
+	<meta name="twitter:image" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
     
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,7 +37,11 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
-    
+
+	<!-- particles.js container -->
+	<div id="particles-js"></div>
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
@@ -57,19 +61,14 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="./index.html#header">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="./index.html#about">About</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link page-scroll" href="./index.html#services">Services ▾</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="./development.html">Design & Development</a>
-                            <!--
-							<div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="./teaching.html">Training & Mentoring</a>
                             <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="./gingerbeer.html">Ginger Beer Brew</a>
+							<div class="dropdown-divider"></div>
                             <a class="dropdown-item page-scroll" href="./origami.html">Paper art & Origami</a>
-							-->
                         </div>
                     </li>
                     <li class="nav-item">
@@ -108,30 +107,30 @@
     <!-- end of navigation -->
 
 
-    <!-- Header -->
+    <!-- Page Title -->
     <header class="ex-header">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h1>Training & Mentoring</h1>
+                    <h1>Ginger Beer Brewer</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </header> <!-- end of ex-header -->
-    <!-- end of header -->
+    <!-- end of page Title -->
 
 
-    <!-- Basic -->
+    <!-- Banner -->
     <div class="ex-basic-1 pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="images/project-details-large.jpg" alt="alternative">
+                    <img class="img-fluid mt-5 mb-3" src="images/gingerbeer/banner.jpg" alt="alternative">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
-    <!-- end of basic -->
+    <!-- end of banner -->
 
 
     <!-- Basic -->
@@ -422,7 +421,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" href="#header">Yassin Lokhat</a></p>
+                    <p class="p-small">Copyright © <a class="no-line" href="./index.html#header">Yassin Lokhat</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -440,6 +439,9 @@
     
     	
     <!-- Scripts -->
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
+
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
