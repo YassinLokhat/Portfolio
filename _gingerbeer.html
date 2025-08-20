@@ -4,731 +4,312 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- HTML Meta Tags -->
-    <title>The Minty Cat - Artisanal Ginger Beer</title>
-    <meta name="description" content="Discover The Minty Cat - Premium artisanal ginger beer made with 100% natural ingredients. Classic and Intense versions available.">
+	<!-- HTML Meta Tags -->
+	<title>Yassin Lokhat's Portfolio - Ginger Beer Brewer</title>
+	<meta name="description" content="Discover my handcrafted local ginger beer, a bold and refreshing blend made with thoughtfully sourced ingredients.">
     <meta name="author" content="Yassin Lokhat">
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:site_name" content="The Minty Cat - Artisanal Ginger Beer" />
-    <meta property="og:url" content="https://yassinlokhat.com/gingerbeer.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="The Minty Cat - Artisanal Ginger Beer">
-    <meta property="og:description" content="Premium artisanal ginger beer made with 100% natural ingredients">
+	<!-- Facebook Meta Tags -->
+	<meta property="og:site_name" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer" />
+	<meta property="og:site" content="https://yassinlokhat.com" />
+	<meta property="og:url" content="https://yassinlokhat.com/gingerbeer.html">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer">
+	<meta property="og:description" content="Discover my handcrafted local ginger beer, a bold and refreshing blend made with thoughtfully sourced ingredients.">
+	<meta property="og:image" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
 
-    <!-- Twitter Meta Tags -->
-    <meta property="twitter:domain" content="yassinlokhat.com">
-    <meta property="twitter:url" content="https://yassinlokhat.com/gingerbeer.html">
-    <meta name="twitter:title" content="The Minty Cat - Artisanal Ginger Beer">
-    <meta name="twitter:description" content="Premium artisanal ginger beer made with 100% natural ingredients">
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
+	<meta property="twitter:domain" content="yassinlokhat.com">
+	<meta property="twitter:url" content="https://yassinlokhat.com">
+	<meta name="twitter:title" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer">
+	<meta name="twitter:description" content="Discover my handcrafted local ginger beer, a bold and refreshing blend made with thoughtfully sourced ingredients.">
+	<meta name="twitter:image" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
     
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
-
-    <style>
-        /* Base Styles - Matching the existing portfolio theme */
-        :root {
-            --primary-color: #d4af37; /* Golden color for premium feel */
-            --secondary-color: #2c5234; /* Deep green for natural ingredients */
-            --accent-color: #ff6b35; /* Warm orange for energy */
-            --text-dark: #333;
-            --text-light: #666;
-            --bg-gray: #f8f9fa;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-        }
-
-        /* Header Styles */
-        .header {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-            color: var(--white);
-            padding: 100px 0 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
-            opacity: 0.3;
-        }
-
-        .brand-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            position: relative;
-            z-index: 2;
-        }
-
-        .brand-subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Navigation */
-        .navbar {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            padding: 1rem 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .navbar-brand {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            color: var(--secondary-color) !important;
-            font-size: 1.5rem;
-        }
-
-        .navbar-nav .nav-link {
-            color: var(--text-dark) !important;
-            font-weight: 500;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: var(--primary-color) !important;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 3rem;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--primary-color);
-            margin: 20px auto 0;
-        }
-
-        /* Product Cards */
-        .product-card {
-            background: var(--white);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        }
-
-        .product-card h4 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-
-        .product-badge {
-            display: inline-block;
-            background: var(--accent-color);
-            color: var(--white);
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        /* Highlight Box */
-        .highlight-box {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #f4d03f 100%);
-            color: var(--text-dark);
-            border-radius: 15px;
-            padding: 3rem;
-            margin: 3rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .highlight-box::before {
-            content: '✨';
-            font-size: 4rem;
-            position: absolute;
-            top: -10px;
-            right: 20px;
-            opacity: 0.3;
-        }
-
-        .highlight-box h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Image Gallery */
-        .image-gallery {
-            background: var(--bg-gray);
-            padding: 80px 0;
-        }
-
-        .gallery-item {
-            margin-bottom: 2rem;
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-image:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-caption {
-            text-align: center;
-            margin-top: 1rem;
-            font-weight: 600;
-            color: var(--text-light);
-        }
-
-        /* Brand Story */
-        .brand-story {
-            background: var(--secondary-color);
-            color: var(--white);
-            padding: 80px 0;
-        }
-
-        .brand-story .section-title {
-            color: var(--white);
-        }
-
-        .brand-story .section-title::after {
-            background: var(--primary-color);
-        }
-
-        /* Ingredients Section */
-        .ingredient-item {
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-
-        .ingredient-icon {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .ingredient-item h5 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background: var(--bg-gray);
-            padding: 80px 0;
-        }
-
-        .contact-btn {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-            color: var(--white);
-            border: none;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .contact-btn:hover {
-            color: var(--white);
-            text-decoration: none;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
-
-        .social-links {
-            margin-top: 2rem;
-        }
-
-        .social-link {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background: var(--primary-color);
-            color: var(--white);
-            border-radius: 50%;
-            text-align: center;
-            line-height: 50px;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: var(--secondary-color);
-            color: var(--white);
-            text-decoration: none;
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--text-dark);
-            color: var(--white);
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .brand-title {
-                font-size: 2.5rem;
-            }
-            
-            .brand-subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .highlight-box {
-                padding: 2rem 1rem;
-            }
-            
-            .highlight-box h3 {
-                font-size: 1.5rem;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        /* Placeholder images */
-        .placeholder-image {
-            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 1.2rem;
-            border-radius: 10px;
-        }
-    </style>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/gingerbeer.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
 </head>
-
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#home">
-                🐱 The Minty Cat
-            </a>
             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="alternative">Yassin Lokhat</a>  
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="./index.html">Yassin Lokhat</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link page-scroll" href="./index.html#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link page-scroll" href="./index.html#services">Services ▾</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="./development.html">Design & Development</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="./gingerbeer.html">Ginger Beer Brew</a>
+							<div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="./origami.html">Paper art & Origami</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#story">Our Story</a>
+                        <a class="nav-link page-scroll" href="#product-versions">Products versions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
+                        <a class="nav-link page-scroll" href="#process">Production process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link page-scroll" href="#arguments">Why Choose us?</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://api.whatsapp.com/send?phone=261384727311" target="_blank">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-    <!-- Header -->
-    <section id="home" class="header">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="brand-title fade-in-up">The Minty Cat</h1>
-                    <p class="brand-subtitle fade-in-up">Premium Artisanal Ginger Beer</p>
-                    <p class="lead fade-in-up">Crafted with love using only 100% natural ingredients</p>
-                </div>
-            </div>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>The Minty Cat</h1>
+            <p class="subtitle">Artisanal Ginger Beer</p>
+            <div class="tagline">100% Natural • No Additives • Handcrafted</div>
+			<img src="images/gingerbeer/TheMintyCat_logo.png" alt="alternative">
         </div>
-    </section>
+    </header>
 
     <!-- Brand Story Section -->
-    <section id="story" class="brand-story">
+    <section class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title">The Story Behind Our Name</h2>
-                </div>
+            <div class="brand-story">
+                <h2>The Story Behind the Name</h2>
+                <p>Our brand name "The Minty Cat" comes from a delightful pun in the Malagasy language. In Malagasy, ginger is called <span class="highlight">"Sakamalao"</span> which can be cleverly split into two parts:</p>
+                <ul style="list-style: none; text-align: left; max-width: 400px; margin: 30px auto;">
+                    <li style="padding: 10px 0; font-size: 1.2rem;"><strong>"Saka"</strong> = Cat</li>
+                    <li style="padding: 10px 0; font-size: 1.2rem;"><strong>"Malao"</strong> = Minty</li>
+                </ul>
+                <p>Hence, <strong>The Minty Cat</strong> - a name that celebrates both our local heritage and the refreshing essence of our ginger beer.</p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center">
-                        <p class="lead mb-4">
-                            Our name "The Minty Cat" comes from a delightful play on words rooted in Malagasy culture.
-                        </p>
-                        <p class="mb-4">
-                            In the Malagasy language, ginger is called <strong>"Sakamalao"</strong> - a word that can be beautifully split into two parts:
-                        </p>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="p-3">
-                                    <h4><i class="fas fa-cat" style="color: var(--primary-color);"></i></h4>
-                                    <h5><strong>"Saka"</strong></h5>
-                                    <p>means Cat</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="p-3">
-                                    <h4><i class="fas fa-leaf" style="color: var(--primary-color);"></i></h4>
-                                    <h5><strong>"Malao"</strong></h5>
-                                    <p>means Minty</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="lead">
-                            And so, <strong>"The Minty Cat"</strong> was born - celebrating both our local heritage and the fresh, invigorating taste of our artisanal ginger beer!
-                        </p>
+        </div>
+    </section>
+
+    <!-- Product Description Section -->
+    <section class="section bg-gray">
+        <div class="container">
+            <h2>Pure & Natural Ingredients</h2>
+            <div class="brand-story">
+                <p>At The Minty Cat, we believe in keeping things simple and natural. Our ginger beer is brewed using only <strong>four pure ingredients</strong>: water, sugar, fresh ginger, and lemon. We proudly use <span class="highlight">no colorants, no artificial sweeteners, and no preservatives</span>.</p>
+                <p>Every bottle is a testament to traditional brewing methods combined with our passion for authentic, refreshing taste.</p>
+            </div>
+
+            <!-- Product Image Placeholder -->
+            <div class="image-placeholder">
+                <i class="fas fa-beer"></i>
+                The Minty Cat Bottles
+            </div>
+        </div>
+    </section>
+
+    <!-- Versions Section -->
+    <section id="product-versions" class="section">
+        <div class="container">
+            <h2>Two Distinct Versions</h2>
+            <div class="versions-grid">
+                <!-- Classic Version -->
+                <div class="version-card">
+                    <div class="version-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Classic Version</h3>
+                    <p>Sweeter and milder, perfect for those who prefer a gentle introduction to ginger beer. Smooth and refreshing with a balanced ginger kick.</p>
+                    
+                    <div class="ingredients-list">
+                        <h4>Composition:</h4>
+                        <ul>
+                            <li>Water: 64%</li>
+                            <li>Sugar: 31%</li>
+                            <li>Ginger: 4%</li>
+                            <li>Lemon: <1%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Intense Version -->
+                <div class="version-card">
+                    <div class="version-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Intense Version</h3>
+                    <p>Stronger and less sweet, designed for ginger enthusiasts who crave that authentic, fiery ginger experience. Bold and invigorating.</p>
+                    
+                    <div class="ingredients-list">
+                        <h4>Composition:</h4>
+                        <ul>
+                            <li>Water: 77%</li>
+                            <li>Sugar: 15%</li>
+                            <li>Ginger: 7%</li>
+                            <li>Lemon: <1%</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Natural Ingredients Section -->
-    <section class="section">
+    <!-- Process Section -->
+    <section id="process" class="section bg-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title">100% Natural Ingredients</h2>
+            <h2>Our Artisanal Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Fresh Ginger Selection</h4>
+                    <p>We carefully select the finest fresh ginger roots, ensuring optimal flavor and quality for each batch.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Traditional Brewing</h4>
+                    <p>Our time-honored brewing process extracts the perfect balance of ginger essence and natural flavors.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Quality Control</h4>
+                    <p>Every batch is tested and approved to meet our high standards of taste and purity before bottling.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Hand Bottling</h4>
+                    <p>Each bottle is carefully filled and sealed by hand, ensuring the freshest product reaches your table.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="ingredient-item">
-                        <div class="ingredient-icon">
-                            <i class="fas fa-tint"></i>
-                        </div>
-                        <h5>Pure Water</h5>
-                        <p>Crystal clear, filtered water as our foundation</p>
-                    </div>
+
+            <!-- Process Images Placeholders -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px;">
+                <div class="image-placeholder">
+                    <i class="fas fa-seedling"></i>
+                    Fresh Ginger Preparation
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="ingredient-item">
-                        <div class="ingredient-icon">
-                            <i class="fas fa-cube"></i>
-                        </div>
-                        <h5>Natural Sugar</h5>
-                        <p>Pure cane sugar for authentic sweetness</p>
-                    </div>
+                <div class="image-placeholder">
+                    <i class="fas fa-flask"></i>
+                    Brewing Process
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="ingredient-item">
-                        <div class="ingredient-icon">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                        <h5>Fresh Ginger</h5>
-                        <p>Hand-selected ginger root for that perfect kick</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="ingredient-item">
-                        <div class="ingredient-icon">
-                            <i class="fas fa-lemon"></i>
-                        </div>
-                        <h5>Fresh Lemon</h5>
-                        <p>Zesty lemon for a refreshing citrus balance</p>
-                    </div>
+                <div class="image-placeholder">
+                    <i class="fas fa-wine-bottle"></i>
+                    Final Product
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Highlight Box -->
-    <section class="section">
+    <section id="arguments" class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="highlight-box">
-                        <h3>Pure & Authentic</h3>
-                        <p class="lead mb-0">
-                            No artificial colorants, no synthetic sweeteners, no preservatives. 
-                            Just pure, natural ingredients crafted with traditional brewing methods 
-                            for an authentic taste experience that honors both quality and heritage.
-                        </p>
+            <div class="highlight-box">
+                <h3>Why Choose The Minty Cat?</h3>
+                <p>Experience the authentic taste of Madagascar with every sip</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h4>100% Natural</h4>
+                        <p>Only four pure ingredients, no artificial additives</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title">Our Two Signature Versions</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="product-card">
-                        <div class="product-badge">Classic</div>
-                        <h4><i class="fas fa-heart" style="color: var(--accent-color);"></i> The Classic Version</h4>
-                        <p class="lead">Sweeter & Milder</p>
-                        <p>
-                            Perfect for those who enjoy a gentler introduction to ginger beer. 
-                            Our classic version offers a smooth, balanced taste with just the right 
-                            amount of ginger warmth, complemented by natural sweetness and a hint of lemon freshness.
-                        </p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success"></i> Smooth and balanced flavor</li>
-                            <li><i class="fas fa-check text-success"></i> Perfect for all ages</li>
-                            <li><i class="fas fa-check text-success"></i> Refreshing any time of day</li>
-                        </ul>
+                    <div class="feature">
+                        <i class="fas fa-hands"></i>
+                        <h4>Handcrafted</h4>
+                        <p>Artisanal brewing process with attention to detail</p>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="product-card">
-                        <div class="product-badge" style="background: var(--secondary-color);">Intense</div>
-                        <h4><i class="fas fa-fire" style="color: var(--accent-color);"></i> The Intense Version</h4>
-                        <p class="lead">Stronger & Less Sweet</p>
-                        <p>
-                            For the bold and adventurous! Our intense version packs a powerful ginger punch 
-                            with reduced sweetness, allowing the natural spiciness and complexity of fresh ginger 
-                            to take center stage. A true ginger lover's delight.
-                        </p>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check text-success"></i> Bold ginger flavor</li>
-                            <li><i class="fas fa-check text-success"></i> Lower sugar content</li>
-                            <li><i class="fas fa-check text-success"></i> Perfect digestive aid</li>
-                        </ul>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h4>Local Heritage</h4>
+                        <p>Celebrating Malagasy culture and traditions</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Image Gallery -->
-    <section id="gallery" class="image-gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title" style="color: var(--secondary-color);">From Ingredients to Bottle</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <div class="text-center">
-                            <i class="fas fa-seedling fa-3x mb-2" style="color: var(--primary-color);"></i>
-                            <div>Fresh Ingredients</div>
-                        </div>
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <h4>Premium Quality</h4>
+                        <p>Fresh ingredients and rigorous quality control</p>
                     </div>
-                    <div class="gallery-caption">Hand-selected fresh ginger and lemons</div>
-                </div>
-                <div class="col-lg-4 col-md-6 gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <div class="text-center">
-                            <i class="fas fa-flask fa-3x mb-2" style="color: var(--primary-color);"></i>
-                            <div>Brewing Process</div>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">Traditional artisanal brewing methods</div>
-                </div>
-                <div class="col-lg-4 col-md-6 gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <div class="text-center">
-                            <i class="fas fa-wine-bottle fa-3x mb-2" style="color: var(--primary-color);"></i>
-                            <div>Final Product</div>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">Ready-to-enjoy bottled ginger beer</div>
-                </div>
-                <div class="col-lg-4 col-md-6 gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <div class="text-center">
-                            <i class="fas fa-fire fa-3x mb-2" style="color: var(--accent-color);"></i>
-                            <div>Ginger Preparation</div>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">Fresh ginger being prepared for brewing</div>
-                </div>
-                <div class="col-lg-4 col-md-6 gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <div class="text-center">
-                            <i class="fas fa-stopwatch fa-3x mb-2" style="color: var(--primary-color);"></i>
-                            <div>Fermentation</div>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">Careful timing for perfect fermentation</div>
-                </div>
-                <div class="col-lg-4 col-md-6 gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <div class="text-center">
-                            <i class="fas fa-award fa-3x mb-2" style="color: var(--primary-color);"></i>
-                            <div>Quality Control</div>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">Every batch tested for perfection</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <div class="contact-section bg-gray">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Ready to experience The Minty Cat? Contact us for orders and inquiries.</p>
+            
+            <div style="margin-top: 30px;">
+                <a href="mailto:contact@themintycat.com" class="btn-contact">
+                    <i class="fas fa-envelope"></i>
+                    Email Us
+                </a>
+                <a href="https://wa.me/261384727311" class="btn-contact" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="#" class="btn-contact">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-title">Get in Touch</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <p class="lead mb-4">
-                        Interested in trying The Minty Cat ginger beer or want to learn more about our artisanal brewing process? 
-                        We'd love to hear from you!
-                    </p>
-                    <a href="mailto:contact@yassinlokhat.com?subject=The Minty Cat Inquiry" class="contact-btn mb-4">
-                        <i class="fas fa-envelope mr-2"></i> Contact Us
-                    </a>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/yassin-lokhat/" class="social-link" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=261384727311" class="social-link" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="mailto:contact@yassinlokhat.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>&copy; 2024 The Minty Cat - Artisanal Ginger Beer. Crafted by <a href="https://yassinlokhat.com" style="color: var(--primary-color);">Yassin Lokhat</a></p>
-                    <p><small>Made with 🧡 in Madagascar using traditional brewing methods</small></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+					<p>&copy; 2025 The Minty Cat by <a class="no-line" href="./index.html#header">Yassin Lokhat</a>. All rights reserved. | Proudly brewed in Madagascar</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+        
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
     
-    <script>
-        // Smooth scrolling for navigation links
-        $(document).ready(function() {
-            $('a[href^="#"]').on('click', function(event) {
-                var target = $(this.getAttribute('href'));
-                if( target.length ) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 70
-                    }, 1000);
-                }
-            });
-
-            // Navbar background change on scroll
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 50) {
-                    $('.navbar').addClass('scrolled');
-                } else {
-                    $('.navbar').removeClass('scrolled');
-                }
-            });
-
-            // Add fade-in animation to elements as they come into view
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in-up');
-                    }
-                });
-            });
-
-            // Observe all product cards and gallery items
-            document.querySelectorAll('.product-card, .gallery-item, .ingredient-item').forEach((el) => {
-                observer.observe(el);
-            });
-        });
-    </script>
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
