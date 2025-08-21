@@ -84,6 +84,10 @@ p {
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.header img {
+	width: 40%;
+}
+
 /* Sections */
 .section {
 	padding: 80px 0;
