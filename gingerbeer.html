@@ -139,10 +139,20 @@
                 <p>Every bottle is a testament to traditional brewing methods combined with our passion for authentic and refreshing taste.</p>
             </div>
 
-            <!-- Product Image Placeholder -->
-            <div class="image-placeholder">
-                <i class="fas fa-beer"></i>
-                The Minty Cat Bottles
+            <!-- Product Images Slideshow -->
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="./images/gingerbeer/slides/gingerbeer-01.jpg" alt="The Minty Cat Bottles - Classic and Intense versions">
+                    <div class="slide-caption">The Minty Cat Collection - Classic & Intense</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/gingerbeer/slides/gingerbeer-02.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
+                    <div class="slide-caption">Handcrafted with Natural Ingredients</div>
+                </div>
+                
+                <!-- Navigation arrows -->
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
             </div>
         </div>
     </section>
@@ -318,5 +328,8 @@
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    <!-- JavaScript for Slideshow -->
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
