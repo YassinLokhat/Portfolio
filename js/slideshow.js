@@ -5,6 +5,9 @@
 
 // Global variable to track current slide
 let slideIndex = 1;
+let intervalId = setInterval(() => {
+        changeSlide(1);
+    }, 5000);
 
 /**
  * Function to change slide by a given number (positive or negative)
@@ -12,6 +15,11 @@ let slideIndex = 1;
  */
 function changeSlide(n) {
     showSlide(slideIndex += n);
+	
+	clearInterval(intervalId);
+	intervalId = setInterval(() => {
+		changeSlide(1);
+	}, 5000);
 }
 
 /**
@@ -56,7 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(slideIndex);
     
     // Auto-advance slideshow every 5 seconds
-    setInterval(() => {
+    clearInterval(intervalId);
+    intervalId = setInterval(() => {
         changeSlide(1);
     }, 5000);
     
