@@ -85,7 +85,7 @@
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="https://api.whatsapp.com/send?phone=261384727311" target="_blank">
+                        <a href="https://wa.me/261384727311" target="_blank">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-whatsapp fa-stack-1x"></i>
                         </a>
@@ -139,10 +139,40 @@
                 <p>Every bottle is a testament to traditional brewing methods combined with our passion for authentic and refreshing taste.</p>
             </div>
 
-            <!-- Product Image Placeholder -->
-            <div class="image-placeholder">
-                <i class="fas fa-beer"></i>
-                The Minty Cat Bottles
+            <!-- Product Images Slideshow -->
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="./images/gingerbeer/slides/gingerbeer-01.jpg" alt="The Minty Cat Bottles - Classic and Intense versions">
+                    <div class="slide-caption">The Minty Cat Collection - Classic & Intense</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/gingerbeer/slides/gingerbeer-02.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
+                    <div class="slide-caption">Handcrafted with Natural Ingredients</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/gingerbeer/slides/gingerbeer-03.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
+                    <div class="slide-caption">Handcrafted with Natural Ingredients</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/gingerbeer/slides/gingerbeer-04.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
+                    <div class="slide-caption">Handcrafted with Natural Ingredients</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/gingerbeer/slides/gingerbeer-05.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
+                    <div class="slide-caption">Handcrafted with Natural Ingredients</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/gingerbeer/slides/gingerbeer-06.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
+                    <div class="slide-caption">Handcrafted with Natural Ingredients</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/gingerbeer/slides/gingerbeer-07.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
+                    <div class="slide-caption">Handcrafted with Natural Ingredients</div>
+                </div>
+                
+                <!-- Navigation arrows -->
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
             </div>
         </div>
     </section>
@@ -166,7 +196,7 @@
                             <li>Water: 64%</li>
                             <li>Sugar: 31%</li>
                             <li>Ginger: 4%</li>
-                            <li>Lemon: <1%</li>
+                            <li>Lemon: &lt;1%</li>
                         </ul>
                     </div>
                 </div>
@@ -185,7 +215,7 @@
                             <li>Water: 77%</li>
                             <li>Sugar: 15%</li>
                             <li>Ginger: 7%</li>
-                            <li>Lemon: <1%</li>
+                            <li>Lemon: &lt;1%</li>
                         </ul>
                     </div>
                 </div>
@@ -278,24 +308,18 @@
             <p>Ready to experience The Minty Cat? Contact us for orders and inquiries.</p>
             
             <div style="margin-top: 30px;">
-                <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com" class="btn-contact">
+				<a href="mailto:themintycat@yassinlokhat.com?cc=yassinlokhat@gmail.com" class="btn-contact">
                     <i class="fas fa-envelope"></i>
                     Email Us
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=261384727311" class="btn-contact" target="_blank">
+				<a href="https://wa.me/261384727311" class="btn-contact" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                     WhatsApp
                 </a>
-                <a href="https://www.linkedin.com/in/yassin-lokhat/" class="btn-contact" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-				<!--
-                <a href="#" class="btn-contact">
+                <a href="https://www.facebook.com/share/1FSBQSkSaK/" class="btn-contact" target="_blank">
                     <i class="fab fa-facebook"></i>
                     Facebook
                 </a>
-				-->
             </div>
         </div>
     </div>
@@ -320,5 +344,8 @@
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    <!-- JavaScript for Slideshow -->
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
