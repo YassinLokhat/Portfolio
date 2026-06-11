@@ -14,43 +14,36 @@
 }
 
 .slide.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;          /* hauteur fixe du conteneur */
-    background-color: #f0f0f0; /* fond visible si l'image est plus petite */
-}
-
-.slide img {
-    /* Remplit le conteneur sans dépasser ni déformer.           */
-    /* Les images plus grandes sont réduites proportionnellement */
-    /* Les images plus petites sont affichées à leur taille réelle */
-    max-height: 500px;
-    max-width: 100%;
-    width: auto;
-    height: auto;
     display: block;
-    object-fit: contain;    /* réduit si trop grand, sans recadrage ni déformation */
 }
 
+/* Zone image : hauteur fixe, image centrée sans déformation */
+.slide img {
+    display: block;
+    height: 500px;
+    width: 100%;
+    object-fit: contain;     /* réduit si trop grand, sans recadrage ni déformation */
+    background-color: #f0f0f0;
+}
+
+/* Caption sous l'image, en dehors de la zone 500px */
 .slide-caption {
-	display: none;
-    position: static;
+    display: block;
     background: none;
     color: #333;
-    padding: 15px 0 0 0;
+    padding: 10px 20px;
     font-size: 1rem;
     text-align: center;
     font-weight: 600;
 }
 
-/* Navigation arrows */
+/* Navigation arrows — centrées sur la zone image uniquement */
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 250px; /* milieu de la zone image (500px / 2) */
+    transform: translateY(-50%);
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
