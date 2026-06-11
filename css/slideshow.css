@@ -17,32 +17,33 @@
     display: block;
 }
 
+/* Zone image : hauteur fixe, image centrée sans déformation */
 .slide img {
-    height: 500px;
-    object-fit: cover;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 500px;
+    width: 100%;
+    object-fit: contain;     /* réduit si trop grand, sans recadrage ni déformation */
+    background-color: #f0f0f0;
 }
 
+/* Caption sous l'image, en dehors de la zone 500px */
 .slide-caption {
-	display: none;
-    position: static;
+    display: block;
     background: none;
     color: #333;
-    padding: 15px 0 0 0;
+    padding: 10px 20px;
     font-size: 1rem;
     text-align: center;
     font-weight: 600;
 }
 
-/* Navigation arrows */
+/* Navigation arrows — centrées sur la zone image uniquement */
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 250px; /* milieu de la zone image (500px / 2) */
+    transform: translateY(-50%);
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -51,6 +52,7 @@
     border: none;
     user-select: none;
     transition: background 0.3s ease;
+    z-index: 10;
 }
 
 .next {
