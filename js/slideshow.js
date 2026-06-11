@@ -1,80 +1,123 @@
 /**
- * The Minty Cat - Slideshow JavaScript
- * Handles the image slideshow functionality with navigation and auto-advance
+ * Slideshow - Multi-instance support
+ * Usage:
+ *   HTML : <div class="slideshow-container" data-autoplay="5000">
+ *              <div class="slide">...</div>
+ *              <button class="prev">❮</button>
+ *              <button class="next">❯</button>
+ *          </div>
+ *
+ *   The buttons inside each container control only that container.
+ *   data-autoplay (ms) is optional; omit or set to "0" to disable auto-advance.
  */
 
-// Global variable to track current slide
-let slideIndex = 1;
-let intervalId = setInterval(() => {
-        changeSlide(1);
-    }, 5000);
+class Slideshow {
+    /**
+     * @param {HTMLElement} container - The .slideshow-container element
+     */
+    constructor(container) {
+        this.container  = container;
+        this.slides     = Array.from(container.querySelectorAll('.slide'));
+        this.current    = 0;
+        this.interval   = null;
+        this.delay      = parseInt(container.dataset.autoplay ?? '5000', 10);
 
-/**
- * Function to change slide by a given number (positive or negative)
- * @param {number} n - Number to change slide by (1 for next, -1 for previous)
- */
-function changeSlide(n) {
-    showSlide(slideIndex += n);
-	
-	clearInterval(intervalId);
-	intervalId = setInterval(() => {
-		changeSlide(1);
-	}, 5000);
+        if (this.slides.length === 0) return;
+
+        this._bindButtons();
+        this._show(0);
+
+        if (this.delay > 0) this._startAuto();
+    }
+
+    /* ── public API ───────────────────────────── */
+
+    move(n) {
+        this._show(this.current + n);
+        this._resetAuto();
+    }
+
+    goTo(n) {
+        this._show(n);
+        this._resetAuto();
+    }
+
+    /* ── private ──────────────────────────────── */
+
+    _show(n) {
+        const len = this.slides.length;
+        this.current = ((n % len) + len) % len;   // wrap-around, handles negative
+
+        this.slides.forEach((s, i) => {
+            s.classList.toggle('active', i === this.current);
+        });
+    }
+
+    _bindButtons() {
+        const prev = this.container.querySelector('.prev');
+        const next = this.container.querySelector('.next');
+
+        if (prev) prev.addEventListener('click', () => this.move(-1));
+        if (next) next.addEventListener('click', () => this.move(1));
+    }
+
+    _startAuto() {
+        if (this.delay <= 0) return;
+        this.interval = setInterval(() => this.move(1), this.delay);
+    }
+
+    _resetAuto() {
+        if (this.delay <= 0) return;
+        clearInterval(this.interval);
+        this._startAuto();
+    }
 }
 
-/**
- * Function to show a specific slide
- * @param {number} n - Slide number to display
- */
-function currentSlide(n) {
-    showSlide(slideIndex = n);
-}
+/* ── Keyboard navigation (last focused container) ─── */
+let _focusedSlideshow = null;
 
-/**
- * Function to display the selected slide and update navigation
- * @param {number} n - Slide index to show
- */
-function showSlide(n) {
-    const slides = document.querySelectorAll('.slide');
-    
-    // Handle wrap-around for slide navigation
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    
-    // Hide all slides by removing active class
-    slides.forEach(slide => {
-        slide.classList.remove('active');
+document.addEventListener('DOMContentLoaded', () => {
+    // Instantiate one Slideshow per .slideshow-container found on the page
+    const instances = [];
+
+    document.querySelectorAll('.slideshow-container').forEach(container => {
+        const sw = new Slideshow(container);
+        instances.push(sw);
+
+        // Track which slideshow the user last interacted with for keyboard nav
+        container.addEventListener('mouseenter', () => { _focusedSlideshow = sw; });
+        container.addEventListener('touchstart',  () => { _focusedSlideshow = sw; }, { passive: true });
     });
-    
-    // Show current slide
-    if (slides[slideIndex - 1]) {
-        slides[slideIndex - 1].classList.add('active');
-    }
-}
 
-/**
- * Initialize slideshow when page loads
- */
-document.addEventListener('DOMContentLoaded', function() {
-    // Ensure first slide is shown on page load
-    showSlide(slideIndex);
-    
-    // Auto-advance slideshow every 5 seconds
-    clearInterval(intervalId);
-    intervalId = setInterval(() => {
-        changeSlide(1);
-    }, 5000);
-    
-    // Add keyboard navigation support
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'ArrowLeft') {
-            changeSlide(-1);
-        } else if (e.key === 'ArrowRight') {
-            changeSlide(1);
-        }
+    // Default: keyboard controls the first slideshow (or whichever was last hovered)
+    if (instances.length > 0) _focusedSlideshow = instances[0];
+
+    document.addEventListener('keydown', e => {
+        if (!_focusedSlideshow) return;
+        if (e.key === 'ArrowLeft')  _focusedSlideshow.move(-1);
+        if (e.key === 'ArrowRight') _focusedSlideshow.move(1);
     });
 });
+
+/* ── Legacy global helpers (backward-compat with inline onclick="changeSlide(±1)") ─── */
+
+/**
+ * Returns the Slideshow instance whose .slideshow-container contains `el`.
+ * Falls back to the first instance on the page.
+ */
+function _getSlideshowForElement(el) {
+    const container = el ? el.closest('.slideshow-container') : null;
+    if (container && container._swInstance) return container._swInstance;
+    // If onclick is used without a reference, control the focused one
+    return _focusedSlideshow;
+}
+
+// Keep the old function names working when used as onclick="changeSlide(1)"
+// They will act on the slideshow that was last hovered/touched.
+function changeSlide(n) {
+    if (_focusedSlideshow) _focusedSlideshow.move(n);
+}
+
+function currentSlide(n) {
+    if (_focusedSlideshow) _focusedSlideshow.goTo(n - 1); // was 1-based
+}
