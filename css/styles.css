@@ -33,6 +33,19 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
 body,
 html {
     width: 100%;
