@@ -6,24 +6,23 @@
     
 	<!-- HTML Meta Tags -->
 	<title>Yassin Lokhat's Portfolio - Design & Development</title>
-	<meta name="description" content="Are you looking for a tool developper? Check my apps gallery.">
+	<meta name="description" content="Looking for a tool developer? Browse my Windows apps gallery.">
     <meta name="author" content="Yassin Lokhat">
 
 	<!-- Facebook Meta Tags -->
 	<meta property="og:site_name" content="Yassin Lokhat's Portfolio - Design & Development" />
-	<meta property="og:site" content="https://yassinlokhat.com" />
 	<meta property="og:url" content="https://yassinlokhat.com/development.html" />
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Yassin Lokhat's Portfolio - Design & Development"/>
-	<meta property="og:description" content="Need a tool developper? Check my apps gallery.">
+	<meta property="og:description" content="Looking for a tool developer? Browse my Windows apps gallery.">
 	<meta property="og:image" content="https://yassinlokhat.com/images/development/banner.jpg">
 
 	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="https://yassinlokhat.com/images/development/banner.jpg">
-	<meta property="twitter:domain" content="yassinlokhat.com">
-	<meta property="twitter:url" content="https://yassinlokhat.com">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:domain" content="yassinlokhat.com">
+	<meta name="twitter:url" content="https://yassinlokhat.com/development.html">
 	<meta name="twitter:title" content="Yassin Lokhat's Portfolio - Design & Development">
-	<meta name="twitter:description" content="Need a tool developper? Check my apps gallery.">
+	<meta name="twitter:description" content="Looking for a tool developer? Browse my Windows apps gallery.">
 	<meta name="twitter:image" content="https://yassinlokhat.com/images/development/banner.jpg">
     
     <!-- Styles -->
@@ -36,8 +35,25 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+	<link rel="canonical" href="https://yassinlokhat.com/development.html">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "WebPage",
+	  "name": "Design & Development — Yassin Lokhat",
+	  "url": "https://yassinlokhat.com/development.html",
+	  "description": "Windows tools and apps designed and developed by Yassin Lokhat, including Upsilon Ecosystem.",
+	  "isPartOf": {
+	    "@type": "WebSite",
+	    "name": "Yassin Lokhat's Portfolio",
+	    "url": "https://yassinlokhat.com/"
+	  }
+	}
+	</script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
+	<a href="#upsilon-ecosystem" class="sr-only sr-only-focusable">Skip to main content</a>
 
 	<!-- particles.js container -->
 	<div id="particles-js"></div>
@@ -48,12 +64,12 @@
         <div class="container">
             
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="alternative">Yassin Lokhat</a>  
+            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="">Yassin Lokhat</a>  
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="./index.html">Yassin Lokhat</a> -->
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" aria-label="Toggle navigation" aria-controls="navbarsExampleDefault">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -63,7 +79,7 @@
                         <a class="nav-link page-scroll" href="./index.html#header">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link page-scroll" href="./index.html#services">Services ▾</a>
+                        <a class="nav-link page-scroll" href="./index.html#services" id="dropdown01">Services ▾</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="./development.html">Design & Development</a>
                             <div class="dropdown-divider"></div>
@@ -76,8 +92,8 @@
                         <a class="nav-link page-scroll" href="#upsilon-ecosystem">Upsilon Ecosystem</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link page-scroll" href="#projects">Projects ▾</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="nav-link page-scroll" href="#projects" id="dropdown02">Projects ▾</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown02">
                             <a class="dropdown-item page-scroll" href="#upsilon-apps-passkey">Upsilon.Apps.Passkey</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item page-scroll" href="#upsilon-apps-tools-baseConverter">Upsilon.Apps.Tools.BaseConverter</a>
@@ -90,21 +106,21 @@
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank" rel="noopener noreferrer" aria-label="Yassin Lokhat on LinkedIn">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fab fa-linkedin fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="https://wa.me/261384727311" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-whatsapp fa-stack-1x"></i>
+                        <a href="https://wa.me/261384727311" target="_blank" rel="noopener noreferrer" aria-label="Contact Yassin Lokhat on WhatsApp">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com" aria-label="Email Yassin Lokhat">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fa fa-envelope fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                 </span>
@@ -132,7 +148,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="images/development/banner.jpg" alt="alternative">
+                    <img class="img-fluid mt-5 mb-3" src="images/development/banner.jpg" alt="Developer workstation seen through glasses, with C# code on multiple screens">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -145,10 +161,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <p>Having started coding at a the age of 15, I had the opportunity to look into many aspects of software development.</p>
-                    <p>I first started with the C language, which allowed me to understand the basics of programming, but more importantly, the basics of algorithms and how computers work. I continued my self-training in C++ during which I discovered object-oriented programming. At the same time, and especially for the sake of diversification, I studied PHP to open up the world of web development and I discovered Windows automation via AutoIt.</p>
-                    <p>During my first year at the Polytechnic High Institute of Madagascar, I attended numerous presentations of projects carried out by my 3rd year colleagues during which I discovered C# and .Net. The speed with which anyone could create Windows applications with this technology impressed me and I then made it my spearhead.</p>
-                    <p class="mb-5">Of course over the years I have tried other programming languages and technologies such as Java, JavaScript or even Python but I have not delved into them as much as the C/C++/C# family.</p>
+                    <p>Having started coding at the age of 15, I had the opportunity to explore many aspects of software development.</p>
+                    <p>I first started with C, which taught me the basics of programming — and, more importantly, algorithms and how computers work. I continued teaching myself C++, where I discovered object-oriented programming. At the same time, for the sake of variety, I studied PHP to open up web development, and I discovered Windows automation with AutoIt.</p>
+                    <p>During my first year at the Higher Polytechnic Institute of Madagascar, I attended presentations of projects by third-year students and discovered C# and .NET. The speed with which anyone could create Windows applications with this technology impressed me, and I made it my main focus.</p>
+                    <p class="mb-5">Over the years I have also tried other languages and technologies such as Java, JavaScript and Python, but I have not gone as deep into them as the C/C++/C# family.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -161,11 +177,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h2 class="mb-4">Let me introduce to you Upsilon Ecosystem</h2>
-                    <img class="img-fluid mb-5" src="images/development/project-details-small.jpg" alt="alternative">
-                    <p>During the first 2 years of my professional life, I developed a number of tools independently and it was not uncommon to redevelop the mimilar functionalities several times because they were common to many projects.</p>
-                    <p class="mb-4">It is from this observation that Upsilon Ecosystem was born. It consists of two-part development: Upsilon.Common for the codebase in common to all my projects and Upsilon.Apps for the applications and tools.</p>
-                    <p class="mb-4">You can find the Upsilon.Common full documentation <a href="https://upsilonecosystem.yassinlokhat.com/" target="_blank">here</a> and download the latest version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Common/Upsilon.Common.zip" target="_blank">here</a>.</p>
+                    <h2 class="mb-4">Let me introduce Upsilon Ecosystem</h2>
+                    <img class="img-fluid mb-5" src="images/development/project-details-small.jpg" alt="Collage of Upsilon Ecosystem apps: Statistics, Passkey, QR code generator and other Windows tools">
+                    <p>During the first two years of my professional life, I developed a number of tools independently, and it was common to rebuild similar features several times because they were shared across projects.</p>
+                    <p class="mb-4">That is how Upsilon Ecosystem was born. It has two parts: Upsilon.Common, a shared codebase for all my projects, and Upsilon.Apps for the applications and tools.</p>
+                    <p class="mb-4">You can read the <a href="https://upsilonecosystem.yassinlokhat.com/" target="_blank" rel="noopener noreferrer">Upsilon.Common documentation</a> and <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Common/Upsilon.Common.zip" target="_blank" rel="noopener noreferrer">download the latest version (ZIP)</a>.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -191,8 +207,8 @@
                                     <span class="fa-stack-1x">1</span>
                                 </span>
                                 <div class="media-body">
-                                    <h5>Stand alone</h5>
-                                    <p>You don't need to install dozens of dependencies. All you need is the Upsilon Ecosystem app and the .Net 6.0 runtime framework</p>
+                                    <h5>Standalone</h5>
+                                    <p>You don't need to install dozens of dependencies. All you need is the Upsilon Ecosystem app and the .NET 6 runtime.</p>
                                 </div>
                             </li>
                         </ul>
@@ -209,7 +225,7 @@
                                 </span>
                                 <div class="media-body">
                                     <h5>Custom interface</h5>
-                                    <p>Your graphic interface is customizable. In addition to the components offered by .Net, Upsilon Ecosystem also offers original components</p>
+                                    <p>The graphical interface is customizable. In addition to the components offered by .NET, Upsilon Ecosystem also provides original components.</p>
                                 </div>
                             </li>
                         </ul>
@@ -226,7 +242,7 @@
                                 </span>
                                 <div class="media-body">
                                     <h5>Enhanced security</h5>
-                                    <p>Upsilon Ecosystem does not use commercial database system since it has its own and it uses a homemade encryption system.</p>
+                                    <p>Upsilon Ecosystem does not rely on a commercial database: it has its own, and uses a custom encryption system.</p>
                                 </div>
                             </li>
                         </ul>
@@ -246,16 +262,16 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h2 class="h2-heading">My developed tools</h2>
-					<p class="p-heading">Listed below are some of the most representative projects I've designed.<br/>They range from a simple toolkit regrouping severals little tools to advanced applications like a local password management system.</p>
+					<p class="p-heading">Listed below are some of the most representative projects I have designed.<br/>They range from a simple toolkit grouping several small tools to more advanced applications, such as a local password manager.</p>
 				</div> <!-- end of col -->
 			</div> <!-- end of row -->
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
 					<div id="upsilon-apps-passkey" class="text-container project-container">
 						<h4 class="h4-heading">Upsilon.Apps.Passkey</h4>
-						<img class="img-fluid" src="images/development/passkey/user.png" alt="alternative">
-						<p>A fully offline and secured <strong>Password manager</strong>. It supports multiple users, multiple accounts per service, fully customisable password generator and more.</p>
-						<p>You can download the <strong>installer</strong> <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.setup.exe">here</a> or the <strong>portable</strong> version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.portable.zip">here</a>.</p>
+						<img class="img-fluid" src="images/development/passkey/user.png" alt="Upsilon Passkey user account screen">
+						<p>A fully offline and secure <strong>password manager</strong>. It supports multiple users, multiple accounts per service, a fully customizable password generator, and more.</p>
+						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.portable.zip">portable version</a>.</p>
 						
 						<div id="gallery-passkey" class="basic-0 pt-5">
 							<div class="container">
@@ -263,35 +279,35 @@
 									<div class="col-xl-10 offset-xl-1">
 
 										<!-- Product Images Slideshow -->
-										<div class="slideshow-container">
+										<div class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="Upsilon Passkey screenshots">
 											<div class="slide active">
-												<img src="./images/development/passkey/login.png" alt="The minimalist login page">
+												<img src="./images/development/passkey/login.png" alt="Upsilon Passkey login page">
 												<div class="slide-caption">The minimalist login page</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/passkey/setting-passwords.png" alt="The user login and passwords setting page">
+												<img src="./images/development/passkey/setting-passwords.png" alt="Upsilon Passkey user login and password settings">
 												<div class="slide-caption">The user login and passwords setting page</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/passkey/settings-options.png" alt="The user options settings page">
+												<img src="./images/development/passkey/settings-options.png" alt="Upsilon Passkey user options settings">
 												<div class="slide-caption">The user options settings page</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/passkey/password-generator.png" alt="The custom password generator page">
+												<img src="./images/development/passkey/password-generator.png" alt="Upsilon Passkey custom password generator">
 												<div class="slide-caption">The custom password generator page</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/passkey/logs.png" alt="The logs page">
+												<img src="./images/development/passkey/logs.png" alt="Upsilon Passkey logs page">
 												<div class="slide-caption">The logs page</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/passkey/warnings.png" alt="The warnings page">
+												<img src="./images/development/passkey/warnings.png" alt="Upsilon Passkey warnings page">
 												<div class="slide-caption">The warnings page</div>
 											</div>
 											
 											<!-- Navigation arrows -->
-											<button class="prev">❮</button>
-											<button class="next">❯</button>
+											<button class="prev" type="button" aria-label="Previous slide">❮</button>
+											<button class="next" type="button" aria-label="Next slide">❯</button>
 										</div>
 
 									</div> <!-- end of col -->
@@ -301,27 +317,27 @@
 					</div> <!-- end of text-container -->
 					<div id="upsilon-apps-tools-baseConverter" class="text-container project-container">
 						<h4 class="h4-heading">Upsilon.Apps.Tools.BaseConverter</h4>
-						<img class="img-fluid" src="images/development/baseconverter.png" alt="alternative">
-						<p>A tool allowing conversion of integer <strong>from any base to any other base</strong> and support <strong>Logical Operators (And, or, Not, Xor, Shift), Addition and Multiplication</strong>. The size of the number is virtually unlimited.</p>
-						<p>You can download the <strong>installer</strong> <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.setup.exe">here</a> or the <strong>portable</strong> version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.portable.zip">here</a></p>
+						<img class="img-fluid" src="images/development/baseconverter.png" alt="Upsilon BaseConverter converting integers between numeric bases">
+						<p>A tool for converting integers <strong>from any base to any other base</strong>, with support for <strong>logical operators (And, Or, Not, Xor, Shift), addition and multiplication</strong>. The size of the number is virtually unlimited.</p>
+						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.portable.zip">portable version</a>.</p>
 					</div> <!-- end of text-container -->
 					<div id="upsilon-apps-tools-statistics" class="text-container project-container">
 						<h4 class="h4-heading">Upsilon.Apps.Tools.Statistics</h4>
-						<img class="img-fluid" src="images/development/statistics.png" alt="alternative">
-						<p>This tool can display a <strong>Comma separated CSV</strong> data file as a <strong>graph with all statistic informations (Minimum, Maximum, Average, etc)</strong>. Each column in the CSV will be displayed on a row in the tool.</p>
-						<p>You can download the <strong>installer</strong> <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.setup.exe">here</a> or the <strong>portable</strong> version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.portable.zip">here</a>.</p>
+						<img class="img-fluid" src="images/development/statistics.png" alt="Upsilon Statistics displaying CSV data as graphs">
+						<p>This tool can display a <strong>comma-separated CSV</strong> data file as a <strong>graph with statistics (minimum, maximum, average, and more)</strong>. Each column in the CSV is shown as a row in the tool.</p>
+						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.portable.zip">portable version</a>.</p>
 					</div> <!-- end of text-container -->
 					<div id="upsilon-apps-tools-powersourceautobrightness" class="text-container project-container">
 						<h4 class="h4-heading">Upsilon.Apps.Tools.PowerSourceAutoBrightness</h4>
-						<img class="img-fluid" src="images/development/powersourceautobrightness.png" alt="alternative">
-						<p>This tool changes automatically the <strong>screen brightness</strong> setting it to 100% when the power source is online and setting it to 0% when the power source is offline. It also allows to quickly <strong>toogle</strong> the screen brightness by clicking once on the notification icon.</p>
-						<p>You can download the <strong>installer</strong> <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.setup.exe">here</a> or the <strong>portable</strong> version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.portable.zip">here</a>.</p>
+						<img class="img-fluid" src="images/development/powersourceautobrightness.png" alt="Power Source Auto Brightness notification icon and settings">
+						<p>This tool automatically changes the <strong>screen brightness</strong>: 100% when the power source is plugged in, and 0% when it is unplugged. A single click on the notification icon also <strong>toggles</strong> the brightness.</p>
+						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.portable.zip">portable version</a>.</p>
 					</div> <!-- end of text-container -->
 					<div id="upsilon-apps-tools-toolkit" class="text-container project-container">
 						<h4 class="h4-heading">Upsilon.Apps.Tools.Toolkit</h4>
-						<img class="img-fluid" src="images/development/toolkit/toolkit.png" alt="alternative">
-						<p>This is a <strong>toolkit</strong> which group several <strong>light tools</strong>.</p>
-						<p>You can download the <strong>installer</strong> <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.setup.exe">here</a> or the <strong>portable</strong> version <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.portable.zip">here</a>.</p>
+						<img class="img-fluid" src="images/development/toolkit/toolkit.png" alt="Upsilon Toolkit home screen with several small utilities">
+						<p>A <strong>toolkit</strong> that groups several <strong>lightweight tools</strong>.</p>
+						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.portable.zip">portable version</a>.</p>
 						
 						<div id="gallery-toolkit" class="basic-0 pt-5">
 							<div class="container">
@@ -329,27 +345,27 @@
 									<div class="col-xl-10 offset-xl-1">
 
 										<!-- Product Images Slideshow -->
-										<div class="slideshow-container">
+										<div class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="Upsilon Toolkit screenshots">
 											<div class="slide active">
-												<img src="./images/development/toolkit/filetypeextractor.png" alt="Move all files of a given type from a directory to another">
+												<img src="./images/development/toolkit/filetypeextractor.png" alt="File type extractor moving files of a given type from one folder to another">
 												<div class="slide-caption">Move all files of a given type from a directory to another</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/toolkit/qrcodegenerator.png" alt="Generate or read QrCodes">
-												<div class="slide-caption">Generate or read QrCodes</div>
+												<img src="./images/development/toolkit/qrcodegenerator.png" alt="QR code generator and reader">
+												<div class="slide-caption">Generate or read QR codes</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/toolkit/smartduplicate.png" alt="Duplicate texte and replace specific parts">
-												<div class="slide-caption">Duplicate texte and replace specific parts</div>
+												<img src="./images/development/toolkit/smartduplicate.png" alt="Smart Duplicate: duplicate text and replace specific parts">
+												<div class="slide-caption">Duplicate text and replace specific parts</div>
 											</div>
 											<div class="slide">
-												<img src="./images/development/toolkit/tinyfier.png" alt="Compress images, audios and videos files using ImageMagick and FFMPEG">
-												<div class="slide-caption">Compress images, audios and videos files using ImageMagick and FFMPEG</div>
+												<img src="./images/development/toolkit/tinyfier.png" alt="Tinyfier compressing image, audio and video files with ImageMagick and FFmpeg">
+												<div class="slide-caption">Compress image, audio and video files using ImageMagick and FFmpeg</div>
 											</div>
 											
 											<!-- Navigation arrows -->
-											<button class="prev">❮</button>
-											<button class="next">❯</button>
+											<button class="prev" type="button" aria-label="Previous slide">❮</button>
+											<button class="next" type="button" aria-label="Next slide">❯</button>
 										</div>
 
 									</div> <!-- end of col -->
@@ -385,21 +401,21 @@
                 <div class="col-lg-12">
                     <div class="social-container">
                         <span class="fa-stack">
-                            <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-linkedin fa-stack-1x"></i>
+                            <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank" rel="noopener noreferrer" aria-label="Yassin Lokhat on LinkedIn">
+                                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fab fa-linkedin fa-stack-1x" aria-hidden="true"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://wa.me/261384727311" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-whatsapp fa-stack-1x"></i>
+                            <a href="https://wa.me/261384727311" target="_blank" rel="noopener noreferrer" aria-label="Contact Yassin Lokhat on WhatsApp">
+                                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fab fa-whatsapp fa-stack-1x" aria-hidden="true"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-							<a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fa fa-envelope fa-stack-1x"></i>
+							<a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com" aria-label="Email Yassin Lokhat">
+								<i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fa fa-envelope fa-stack-1x" aria-hidden="true"></i>
 							</a>
                         </span>
                     </div> <!-- end of social-container -->
@@ -417,7 +433,7 @@
                 <div class="col-lg-12">
                     <p class="p-small">Copyright © <a class="no-line" href="./index.html#header">Yassin Lokhat</a></p>
                 </div> <!-- end of col -->
-            </div> <!-- enf of row -->
+            </div> <!-- end of row -->
         </div> <!-- end of container -->
 
         <div class="container">
@@ -425,7 +441,7 @@
                 <div class="col-lg-12">
                     <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
                 </div> <!-- end of col -->
-            </div> <!-- enf of row -->
+            </div> <!-- end of row -->
         </div> <!-- end of container -->
         
     </div> <!-- end of copyright --> 
