@@ -24,6 +24,8 @@ class Slideshow {
 
         if (this.slides.length === 0) return;
 
+        container._swInstance = this;
+
         this._deferOffscreenImages();
         this._bindButtons();
         this._show(0);
@@ -107,21 +109,35 @@ class Slideshow {
 /* ── Keyboard navigation (last focused container) ─── */
 let _focusedSlideshow = null;
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Instantiate one Slideshow per .slideshow-container found on the page
+function initSlideshows(root) {
+    const scope = root || document;
     const instances = [];
 
-    document.querySelectorAll('.slideshow-container').forEach(container => {
+    scope.querySelectorAll('.slideshow-container').forEach(container => {
+        if (container._swInstance) {
+            instances.push(container._swInstance);
+            return;
+        }
+        if (container.querySelectorAll('.slide').length === 0) {
+            return;
+        }
+
         const sw = new Slideshow(container);
         instances.push(sw);
 
-        // Track which slideshow the user last interacted with for keyboard nav
         container.addEventListener('mouseenter', () => { _focusedSlideshow = sw; });
-        container.addEventListener('touchstart',  () => { _focusedSlideshow = sw; }, { passive: true });
+        container.addEventListener('touchstart', () => { _focusedSlideshow = sw; }, { passive: true });
     });
 
-    // Default: keyboard controls the first slideshow (or whichever was last hovered)
-    if (instances.length > 0) _focusedSlideshow = instances[0];
+    if (!_focusedSlideshow && instances.length > 0) {
+        _focusedSlideshow = instances[0];
+    }
+
+    return instances;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initSlideshows();
 
     document.addEventListener('keydown', e => {
         if (!_focusedSlideshow) return;
@@ -129,6 +145,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowRight') _focusedSlideshow.move(1);
     });
 });
+
+window.initSlideshows = initSlideshows;
 
 /* ── Legacy global helpers (backward-compat with inline onclick="changeSlide(±1)") ─── */
 

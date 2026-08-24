@@ -54,7 +54,7 @@
 	}
 	</script>
 </head>
-<body>
+<body data-content-src="data/gingerbeer.json">
 	<a href="#intro" class="sr-only sr-only-focusable">Skip to main content</a>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
@@ -158,25 +158,9 @@
             </div>
 
             <!-- Product Images Slideshow -->
-            <div class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="The Minty Cat product photos">
-                <div class="slide active">
-                    <img src="./images/gingerbeer/slides/gingerbeer-01.jpg" alt="The Minty Cat Classic and Intense bottles">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-02.jpg" alt="The Minty Cat bottle on a table with cake and strawberries">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-03.jpg" alt="The Minty Cat ginger beer bottles">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-04.jpg" alt="The Minty Cat ginger beer bottles">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-05.jpg" alt="The Minty Cat ginger beer bottles">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-06.jpg" alt="The Minty Cat ginger beer bottles">
-                </div>
+            <div class="slideshow-container" data-bind="slides" data-bind-type="slideshow" role="region" aria-roledescription="carousel" aria-label="The Minty Cat product photos">
+                <p class="content-status">Loading photos…</p>
+                <noscript><p class="content-status">Enable JavaScript to view the photos.</p></noscript>
                 
                 <!-- Navigation arrows -->
                 <button class="prev" type="button" aria-label="Previous slide">❮</button>
@@ -353,5 +337,6 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/slideshow.js"></script> <!-- JavaScript for Slideshow -->
+    <script src="js/content.js"></script> <!-- Load galleries and lists from JSON -->
 </body>
 </html>

@@ -53,7 +53,7 @@
 	}
 	</script>
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
+<body data-spy="scroll" data-target=".fixed-top" data-content-src="data/development.json">
 	<a href="#upsilon-ecosystem" class="sr-only sr-only-focusable">Skip to main content</a>
 
 	<!-- particles.js container -->
@@ -94,14 +94,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link page-scroll" href="#projects" id="dropdown02">Projects ▾</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown02">
-                            <a class="dropdown-item page-scroll" href="#upsilon-apps-passkey">Upsilon.Apps.Passkey</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="#upsilon-apps-tools-baseConverter">Upsilon.Apps.Tools.BaseConverter</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="#upsilon-apps-tools-statistics">Upsilon.Apps.Tools.Statistics</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="#upsilon-apps-tools-toolkit">Upsilon.Apps.Tools.Toolkit</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown02" data-bind="projects" data-bind-type="project-nav">
                         </div>
                     </li>
                 </ul>
@@ -268,113 +261,10 @@
 			</div> <!-- end of row -->
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-					<div id="upsilon-apps-passkey" class="text-container project-container">
-						<h4 class="h4-heading">Upsilon.Apps.Passkey</h4>
-						<img class="img-fluid" src="images/development/passkey/user.png" alt="Upsilon Passkey user account screen" loading="lazy" decoding="async">
-						<p>A fully offline and secure <strong>password manager</strong>. It supports multiple users, multiple accounts per service, a fully customizable password generator, and more.</p>
-						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.portable.zip">portable version</a>.</p>
-						
-						<div id="gallery-passkey" class="basic-0 pt-5">
-							<div class="container">
-								<div class="row">
-									<div class="col-xl-10 offset-xl-1">
-
-										<!-- Product Images Slideshow -->
-										<div class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="Upsilon Passkey screenshots">
-											<div class="slide active">
-												<img src="./images/development/passkey/login.png" alt="Upsilon Passkey login page">
-												<div class="slide-caption">The minimalist login page</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/passkey/setting-passwords.png" alt="Upsilon Passkey user login and password settings">
-												<div class="slide-caption">The user login and passwords setting page</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/passkey/settings-options.png" alt="Upsilon Passkey user options settings">
-												<div class="slide-caption">The user options settings page</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/passkey/password-generator.png" alt="Upsilon Passkey custom password generator">
-												<div class="slide-caption">The custom password generator page</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/passkey/logs.png" alt="Upsilon Passkey logs page">
-												<div class="slide-caption">The logs page</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/passkey/warnings.png" alt="Upsilon Passkey warnings page">
-												<div class="slide-caption">The warnings page</div>
-											</div>
-											
-											<!-- Navigation arrows -->
-											<button class="prev" type="button" aria-label="Previous slide">❮</button>
-											<button class="next" type="button" aria-label="Next slide">❯</button>
-										</div>
-
-									</div> <!-- end of col -->
-								</div> <!-- end of row -->
-							</div> <!-- end of container -->
-						</div> <!-- end of basic-3 -->
-					</div> <!-- end of text-container -->
-					<div id="upsilon-apps-tools-baseConverter" class="text-container project-container">
-						<h4 class="h4-heading">Upsilon.Apps.Tools.BaseConverter</h4>
-						<img class="img-fluid" src="images/development/baseconverter.png" alt="Upsilon BaseConverter converting integers between numeric bases" loading="lazy" decoding="async">
-						<p>A tool for converting integers <strong>from any base to any other base</strong>, with support for <strong>logical operators (And, Or, Not, Xor, Shift), addition and multiplication</strong>. The size of the number is virtually unlimited.</p>
-						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.portable.zip">portable version</a>.</p>
-					</div> <!-- end of text-container -->
-					<div id="upsilon-apps-tools-statistics" class="text-container project-container">
-						<h4 class="h4-heading">Upsilon.Apps.Tools.Statistics</h4>
-						<img class="img-fluid" src="images/development/statistics.png" alt="Upsilon Statistics displaying CSV data as graphs" loading="lazy" decoding="async">
-						<p>This tool can display a <strong>comma-separated CSV</strong> data file as a <strong>graph with statistics (minimum, maximum, average, and more)</strong>. Each column in the CSV is shown as a row in the tool.</p>
-						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.portable.zip">portable version</a>.</p>
-					</div> <!-- end of text-container -->
-					<div id="upsilon-apps-tools-powersourceautobrightness" class="text-container project-container">
-						<h4 class="h4-heading">Upsilon.Apps.Tools.PowerSourceAutoBrightness</h4>
-						<img class="img-fluid" src="images/development/powersourceautobrightness.png" alt="Power Source Auto Brightness notification icon and settings" loading="lazy" decoding="async">
-						<p>This tool automatically changes the <strong>screen brightness</strong>: 100% when the power source is plugged in, and 0% when it is unplugged. A single click on the notification icon also <strong>toggles</strong> the brightness.</p>
-						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.portable.zip">portable version</a>.</p>
-					</div> <!-- end of text-container -->
-					<div id="upsilon-apps-tools-toolkit" class="text-container project-container">
-						<h4 class="h4-heading">Upsilon.Apps.Tools.Toolkit</h4>
-						<img class="img-fluid" src="images/development/toolkit/toolkit.png" alt="Upsilon Toolkit home screen with several small utilities" loading="lazy" decoding="async">
-						<p>A <strong>toolkit</strong> that groups several <strong>lightweight tools</strong>.</p>
-						<p>Download the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.setup.exe">installer</a> or the <a href="https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.portable.zip">portable version</a>.</p>
-						
-						<div id="gallery-toolkit" class="basic-0 pt-5">
-							<div class="container">
-								<div class="row">
-									<div class="col-xl-10 offset-xl-1">
-
-										<!-- Product Images Slideshow -->
-										<div class="slideshow-container" role="region" aria-roledescription="carousel" aria-label="Upsilon Toolkit screenshots">
-											<div class="slide active">
-												<img src="./images/development/toolkit/filetypeextractor.png" alt="File type extractor moving files of a given type from one folder to another">
-												<div class="slide-caption">Move all files of a given type from a directory to another</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/toolkit/qrcodegenerator.png" alt="QR code generator and reader">
-												<div class="slide-caption">Generate or read QR codes</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/toolkit/smartduplicate.png" alt="Smart Duplicate: duplicate text and replace specific parts">
-												<div class="slide-caption">Duplicate text and replace specific parts</div>
-											</div>
-											<div class="slide">
-												<img src="./images/development/toolkit/tinyfier.png" alt="Tinyfier compressing image, audio and video files with ImageMagick and FFmpeg">
-												<div class="slide-caption">Compress image, audio and video files using ImageMagick and FFmpeg</div>
-											</div>
-											
-											<!-- Navigation arrows -->
-											<button class="prev" type="button" aria-label="Previous slide">❮</button>
-											<button class="next" type="button" aria-label="Next slide">❯</button>
-										</div>
-
-									</div> <!-- end of col -->
-								</div> <!-- end of row -->
-							</div> <!-- end of container -->
-						</div> <!-- end of basic-3 -->
-						
-					</div> <!-- end of text-container -->
+					<div data-bind="projects" data-bind-type="projects">
+						<p class="content-status">Loading projects…</p>
+						<noscript><p class="content-status">Enable JavaScript to view the projects.</p></noscript>
+					</div>
 				</div> <!-- end of col -->
 			</div> <!-- end of row -->
 		</div> <!-- end of container -->
@@ -449,5 +339,6 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/slideshow.js"></script> <!-- JavaScript for Slideshow -->
+    <script src="js/content.js"></script> <!-- Load galleries and lists from JSON -->
 </body>
 </html>

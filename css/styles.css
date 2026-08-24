@@ -1132,6 +1132,16 @@ a:hover.back-to-top {
 	text-decoration: underline;
 }
 
+.content-status {
+	margin: 1.5rem 0;
+	text-align: center;
+	color: #6c6c6c;
+}
+
+.content-status.error {
+	color: #a94442;
+}
+
 .sr-only-focusable:focus,
 .sr-only-focusable:active {
 	position: fixed;
