@@ -500,6 +500,31 @@ input[type='checkbox'] {
 }
 /* end of dropdown menu */
 
+.navbar .lang-switch {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+}
+
+.navbar .lang-switch .nav-link {
+	padding-right: 0.35rem;
+	padding-left: 0.35rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+.navbar .lang-switch .lang-current {
+	color: #9c9ead;
+	cursor: default;
+}
+
+.navbar .lang-switch .lang-sep {
+	color: #ffffff;
+	opacity: 0.45;
+	padding: 0 0.1rem;
+}
+
 .navbar .fa-stack {
 	width: 2em;
 	margin-right: 0.25rem;
@@ -1266,6 +1291,10 @@ a:hover.back-to-top {
 		width: 90%;
 	}
 
+	.navbar .lang-switch {
+		margin-left: 0.5rem;
+	}
+
 	.navbar .social-icons {
 		margin-left: 0.5rem;
 	}
@@ -1362,7 +1391,8 @@ a:hover.back-to-top {
 
 	.cards-1 .testimonial-text {
 		margin-bottom: 1.625rem;
-		height: 190px;
+		min-height: 190px;
+		height: auto;
 	}
 	/* end of testimonials */
 
@@ -1483,7 +1513,8 @@ a:hover.back-to-top {
 
 	.cards-1 .testimonial-text {
 		margin-bottom: 1.625rem;
-		height: 165px;
+		min-height: 165px;
+		height: auto;
 	}
 	/* end of testimonials */
 	

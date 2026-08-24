@@ -59,7 +59,7 @@
     });
 
     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
-    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle)').on('click', function () {
+    $('[data-toggle="offcanvas"], .navbar-nav li:not(.lang-switch) a:not(.dropdown-toggle)').on('click', function () {
         $('.offcanvas-collapse').toggleClass('open')
     })
 
@@ -92,7 +92,10 @@
 
     /* Back To Top Button */
     // create the back to top button
-    $('body').prepend('<a href="#header" class="back-to-top page-scroll">Back to Top</a>');
+    var backToTopLabel = (document.documentElement.getAttribute("lang") || "en").toLowerCase().indexOf("fr") === 0
+        ? "Haut de page"
+        : "Back to Top";
+    $('body').prepend('<a href="#header" class="back-to-top page-scroll">' + backToTopLabel + '</a>');
     var amountScrolled = 700;
     $(window).scroll(function() {
         if ($(window).scrollTop() > amountScrolled) {
