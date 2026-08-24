@@ -536,9 +536,9 @@ input[type='checkbox'] {
 /******************/
 .header {
 	position: relative;
-	padding-top: 7rem;
-	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
+	padding-top: 6rem;
+	padding-bottom: 4.5rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)), url('../images/header-background.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -579,12 +579,24 @@ input[type='checkbox'] {
 }
 
 .basic-1 {
-	padding-top: 4rem;
+	padding-top: 3.5rem;
     padding-bottom: 1rem;
 }
 
+.basic-1 .about-portrait {
+	display: block;
+	width: 168px;
+	height: 168px;
+	margin: 0 auto 1.5rem;
+	object-fit: cover;
+	object-position: center 18%;
+	border-radius: 50%;
+	border: 3px solid #ffffff;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+}
+
 .basic-1 .text-container {
-	margin-bottom: 3rem;
+	margin-bottom: 2.5rem;
 }
 
 .basic-1 .time {
@@ -605,8 +617,8 @@ input[type='checkbox'] {
 /*     Services     */
 /********************/
 .basic-2 {
-	padding-top: 4rem;
-	padding-bottom: 3rem;
+	padding-top: 3.5rem;
+	padding-bottom: 2.5rem;
 }
 
 .basic-2 .h2-heading {
@@ -621,8 +633,15 @@ input[type='checkbox'] {
 
 .basic-2 .text-box {
 	margin-bottom: 1rem;
-	padding: 3.5rem 1rem 2.125rem 1rem;
-	border: 1px solid #cfd7de;
+	padding: 2.5rem 1.25rem 1.75rem 1.25rem;
+	border: 1px solid #e4e8ee;
+	border-radius: 12px;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.basic-2 .text-box:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 
 .basic-2 .fas,
@@ -633,7 +652,7 @@ input[type='checkbox'] {
 }
 
 .basic-2 h4 {
-	letter-spacing: 1px;
+	letter-spacing: 0.04em;
 }
 
 
@@ -751,7 +770,7 @@ input[type='checkbox'] {
 /*     Testimonials     */
 /************************/
 .cards-1 {
-	padding-top: 3rem;
+	padding-top: 2.5rem;
 }
 
 .cards-1 .h2-heading {
@@ -762,7 +781,8 @@ input[type='checkbox'] {
 .cards-1 .card {
 	margin-bottom: 1rem;
 	padding: 1rem;
-	border: 1px solid lightgray;
+	border: 1px solid #e4e8ee;
+	border-radius: 12px;
 	background-color: transparent;
 }
 
@@ -1138,8 +1158,8 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
+		padding-top: 8rem;
+		padding-bottom: 6.5rem;
 	}
 	/* end of header */
 
@@ -1249,11 +1269,16 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 15rem;
-		padding-bottom: 14rem;
+		padding-top: 10.5rem;
+		padding-bottom: 8.5rem;
 		text-align: left;
 	}
 	/* end of header */
+
+	.basic-1 .text-container.first .about-portrait {
+		margin-left: 0;
+		margin-right: 0;
+	}
 
 
 	/* Details */
@@ -1282,7 +1307,8 @@ a:hover.back-to-top {
 
 	/* Services */
 	.basic-2 .text-box {
-		height: 420px;
+		min-height: 0;
+		height: auto;
 	}
 	/* end of services */
 	
@@ -1375,8 +1401,8 @@ a:hover.back-to-top {
 
 	/* General Styles */
 	.h1-large {
-		font-size: 3rem;
-		line-height: 4.625rem;
+		font-size: 2.75rem;
+		line-height: 3.5rem;
 	}
 	/* end of general styles */
 
@@ -1390,15 +1416,15 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 18.25rem;
-		padding-bottom: 17.25rem;
+		padding-top: 12rem;
+		padding-bottom: 10rem;
 	}
 	/* end of header */
 
 
 	/* Services */
 	.basic-2 .text-box {
-		height: 390px;
+		height: auto;
 	}
 	/* end of services */
 
@@ -1469,3 +1495,20 @@ a:hover.back-to-top {
 	}
 }
 /* end of min-width 1200px */
+
+@media (prefers-reduced-motion: reduce) {
+	.basic-2 .text-box,
+	.basic-3 .image-container img,
+	.basic-4 .image-container img,
+	.navbar .nav-item .nav-link,
+	.navbar .fa-stack-1x,
+	.navbar .fa-stack-2x,
+	.footer .fa-stack .fa-stack-1x,
+	.footer .fa-stack .fa-stack-2x {
+		transition: none;
+	}
+
+	.basic-2 .text-box:hover {
+		transform: none;
+	}
+}

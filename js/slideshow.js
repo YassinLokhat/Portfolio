@@ -24,6 +24,7 @@ class Slideshow {
 
         if (this.slides.length === 0) return;
 
+        this._deferOffscreenImages();
         this._bindButtons();
         this._show(0);
 
@@ -48,9 +49,39 @@ class Slideshow {
         const len = this.slides.length;
         this.current = ((n % len) + len) % len;   // wrap-around, handles negative
 
+        this._hydrate(this.current);
+        this._hydrate(this.current + 1);
+        this._hydrate(this.current - 1);
+
         this.slides.forEach((s, i) => {
             s.classList.toggle('active', i === this.current);
         });
+    }
+
+    _deferOffscreenImages() {
+        this.slides.forEach((slide, i) => {
+            const img = slide.querySelector('img');
+            if (!img || !img.getAttribute('src')) return;
+            img.setAttribute('decoding', 'async');
+            if (i === 0) {
+                return;
+            }
+            if (!img.dataset.src) {
+                img.dataset.src = img.getAttribute('src');
+            }
+            img.removeAttribute('src');
+            img.setAttribute('loading', 'lazy');
+        });
+    }
+
+    _hydrate(index) {
+        const len = this.slides.length;
+        const i = ((index % len) + len) % len;
+        const img = this.slides[i].querySelector('img');
+        if (!img || !img.dataset.src) return;
+        if (!img.getAttribute('src')) {
+            img.setAttribute('src', img.dataset.src);
+        }
     }
 
     _bindButtons() {

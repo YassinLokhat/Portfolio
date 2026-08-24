@@ -26,11 +26,13 @@
 	<meta name="twitter:image" content="https://yassinlokhat.com/images/header-background.jpg">
     
     <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link rel="preload" as="image" href="images/header-background.jpg">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -78,7 +80,7 @@
         <div class="container">
             
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="">Yassin Lokhat</a>  
+            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="" width="30" height="30">Yassin Lokhat</a>  
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="./index.html">Yassin Lokhat</a> -->
@@ -164,6 +166,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="text-container first">
+                        <img class="about-portrait" src="images/details-background.jpg" width="168" height="168" alt="Yassin Lokhat at his workstation">
                         <h2>Hi there, I'm Yassin</h2>
                         <p>I invite you to discover my expertise in developing tools, my vocation to pass on knowledge, my ginger beer, and my passion for origami, which combines creativity and precision.</p>
                         <p>For more details about my career, you can download my <a href="ressources/Yassin_Lokhat_Resume.pdf">full résumé (PDF)</a>.</p>
@@ -306,7 +309,7 @@
                         <div class="card-body">
                             <p class="testimonial-text">“Yassin is a very good asset, whether working within a team or independently. He possesses great analytical skills and demonstrates insightfulness in his reasoning. I highly recommend Yassin for his technical expertise and interpersonal qualities.”</p>
                             <div class="details">
-                                <img src="images/testimonial-1.jpg" alt="Portrait of Vincent Martin">
+                                <img src="images/testimonial-1.jpg" width="60" height="60" loading="lazy" decoding="async" alt="Portrait of Vincent Martin">
                                 <div class="text">
                                     <div class="testimonial-author"><a href="https://www.linkedin.com/in/vincent-martin-05b3a483/" target="_blank" rel="noopener noreferrer">Vincent Martin</a></div>
                                     <div class="occupation">Country Manager at Activeo Mauritius</div>
@@ -321,7 +324,7 @@
                         <div class="card-body">
                             <p class="testimonial-text">“I have worked with Yassin on 2 projects. His ability to adapt to new situations and his passion for the job are what have defined him on those projects.”</p>
                             <div class="details">
-                                <img src="images/testimonial-2.jpg" alt="Portrait of Klein Houzin">
+                                <img src="images/testimonial-2.jpg" width="60" height="60" loading="lazy" decoding="async" alt="Portrait of Klein Houzin">
                                 <div class="text">
                                     <div class="testimonial-author"><a href="https://www.linkedin.com/in/kwakuklein/" target="_blank" rel="noopener noreferrer">Klein Houzin</a></div>
                                     <div class="occupation">Solutions Architect - Technical Project Manager -Scrum Master (AWS & PMP® Certified) || Startups</div>
@@ -336,7 +339,7 @@
                         <div class="card-body">
                             <p class="testimonial-text">“A very dedicated and talented developer. Takes up challenges and focus on good quality of the deliveries. Friendly, helpful and joyful person. Keyplayer for certain tasks if given the opportunity.”</p>
                             <div class="details">
-                                <img src="images/testimonial-3.jpg" alt="Portrait of Kavish Khoodeeram">
+                                <img src="images/testimonial-3.jpg" width="60" height="60" loading="lazy" decoding="async" alt="Portrait of Kavish Khoodeeram">
                                 <div class="text">
                                     <div class="testimonial-author"><a href="https://www.linkedin.com/in/kavish-khoodeeram-38909ba9/" target="_blank" rel="noopener noreferrer">Kavish Khoodeeram</a></div>
                                     <div class="occupation">Senior Software Engineer at Astek Mauritius Ltd</div>
@@ -467,21 +470,12 @@
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
         
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
     
     	
     <!-- Scripts -->
-	<script src="js/particles.min.js"></script>
 	<script src="js/app.js"></script>
 	
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->

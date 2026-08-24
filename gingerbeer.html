@@ -26,10 +26,11 @@
 	<meta name="twitter:image" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
     
     <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/slideshow.css" rel="stylesheet">
 	<link href="css/gingerbeer.css" rel="stylesheet">
@@ -60,7 +61,7 @@
         <div class="container">
             
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="">Yassin Lokhat</a>  
+            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="" width="30" height="30">Yassin Lokhat</a>  
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="./index.html">Yassin Lokhat</a> -->
@@ -257,20 +258,20 @@
                 </div>
             </div>
 
-            <!-- Process Images Placeholders -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px;">
-                <div class="image-placeholder">
-                    <i class="fas fa-seedling"></i>
-                    Fresh Ginger Preparation
-                </div>
-                <div class="image-placeholder">
-                    <i class="fas fa-flask"></i>
-                    Brewing Process
-                </div>
-                <div class="image-placeholder">
-                    <i class="fas fa-wine-bottle"></i>
-                    Final Product
-                </div>
+            <!-- Process photos -->
+            <div class="process-photos">
+                <figure>
+                    <img src="./images/gingerbeer/slides/gingerbeer-01.jpg" alt="The Minty Cat Classic and Intense bottles" loading="lazy" decoding="async">
+                    <figcaption>Classic and Intense bottles</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/gingerbeer/slides/gingerbeer-02.jpg" alt="The Minty Cat bottle served with cake and strawberries" loading="lazy" decoding="async">
+                    <figcaption>At the table</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/gingerbeer/slides/gingerbeer-06.jpg" alt="The Minty Cat ginger beer bottles" loading="lazy" decoding="async">
+                    <figcaption>Ready to share</figcaption>
+                </figure>
             </div>
         </div>
     </section>
