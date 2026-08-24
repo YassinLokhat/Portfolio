@@ -17,19 +17,49 @@
 		}
     });
     
-	// jQuery for page scrolling feature - requires jQuery Easing plugin
+	// Smooth-scroll only for same-page hash links; leave other pages to the browser
+	function isSamePageHash(href) {
+		if (!href) {
+			return false;
+		}
+		if (href.charAt(0) === '#') {
+			return href.length > 1;
+		}
+		var hashIndex = href.indexOf('#');
+		if (hashIndex < 1) {
+			return false;
+		}
+		var path = href.substring(0, hashIndex).replace(/^\.\//, '').replace(/^\//, '');
+		if (!path) {
+			return true;
+		}
+		var current = window.location.pathname.split('/').pop() || 'index.html';
+		return path === current;
+	}
+
 	$(function() {
 		$(document).on('click', 'a.page-scroll', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 600, 'easeInOutExpo');
+			var href = $(this).attr('href') || '';
+			if (!isSamePageHash(href)) {
+				return;
+			}
+			var hash = href.substring(href.indexOf('#'));
+			var $target = $(hash);
+			var top = 0;
+			if ($target.length) {
+				top = $target.offset().top;
+			} else if (hash !== '#header') {
+				return;
+			}
 			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: top
+			}, 600, 'easeInOutExpo');
 		});
     });
 
     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
-    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
+    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle)').on('click', function () {
         $('.offcanvas-collapse').toggleClass('open')
     })
 
@@ -62,7 +92,7 @@
 
     /* Back To Top Button */
     // create the back to top button
-    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
+    $('body').prepend('<a href="#header" class="back-to-top page-scroll">Back to Top</a>');
     var amountScrolled = 700;
     $(window).scroll(function() {
         if ($(window).scrollTop() > amountScrolled) {
