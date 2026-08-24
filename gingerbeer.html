@@ -11,7 +11,6 @@
 
 	<!-- Facebook Meta Tags -->
 	<meta property="og:site_name" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer" />
-	<meta property="og:site" content="https://yassinlokhat.com" />
 	<meta property="og:url" content="https://yassinlokhat.com/gingerbeer.html">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer">
@@ -19,37 +18,55 @@
 	<meta property="og:image" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
 
 	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
-	<meta property="twitter:domain" content="yassinlokhat.com">
-	<meta property="twitter:url" content="https://yassinlokhat.com">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:domain" content="yassinlokhat.com">
+	<meta name="twitter:url" content="https://yassinlokhat.com/gingerbeer.html">
 	<meta name="twitter:title" content="Yassin Lokhat's Portfolio - Ginger Beer Brewer">
 	<meta name="twitter:description" content="Discover my handcrafted local ginger beer, a bold and refreshing blend made with thoughtfully sourced ingredients.">
 	<meta name="twitter:image" content="https://yassinlokhat.com/images/gingerbeer/banner.jpg">
     
     <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/slideshow.css" rel="stylesheet">
 	<link href="css/gingerbeer.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+	<link rel="canonical" href="https://yassinlokhat.com/gingerbeer.html">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "WebPage",
+	  "name": "The Minty Cat — Artisanal Ginger Beer",
+	  "url": "https://yassinlokhat.com/gingerbeer.html",
+	  "description": "Handcrafted local ginger beer by Yassin Lokhat, brewed in Madagascar with four natural ingredients.",
+	  "isPartOf": {
+	    "@type": "WebSite",
+	    "name": "Yassin Lokhat's Portfolio",
+	    "url": "https://yassinlokhat.com/"
+	  }
+	}
+	</script>
 </head>
-<body>
+<body data-content-src="data/gingerbeer.json">
+	<a href="#intro" class="sr-only sr-only-focusable">Skip to main content</a>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
             
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="alternative">Yassin Lokhat</a>  
+            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="" width="30" height="30">Yassin Lokhat</a>  
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="./index.html">Yassin Lokhat</a> -->
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" aria-label="Toggle navigation" aria-controls="navbarsExampleDefault">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -59,7 +76,7 @@
                         <a class="nav-link page-scroll" href="./index.html#header">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link page-scroll" href="./index.html#services">Services ▾</a>
+                        <a class="nav-link page-scroll" href="./index.html#services" id="dropdown01">Services ▾</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="./development.html">Design & Development</a>
                             <div class="dropdown-divider"></div>
@@ -69,32 +86,32 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#product-versions">Products versions</a>
+                        <a class="nav-link page-scroll" href="#product-versions">Product versions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#process">Production process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#arguments">Why Choose us?</a>
+                        <a class="nav-link page-scroll" href="#arguments">Why choose us?</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank" rel="noopener noreferrer" aria-label="Yassin Lokhat on LinkedIn">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fab fa-linkedin fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="https://wa.me/261384727311" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-whatsapp fa-stack-1x"></i>
+                        <a href="https://wa.me/261384727311" target="_blank" rel="noopener noreferrer" aria-label="Contact Yassin Lokhat on WhatsApp">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com" aria-label="Email Yassin Lokhat">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fa fa-envelope fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                 </span>
@@ -104,12 +121,12 @@
     <!-- end of navigation -->
 
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" id="intro">
         <div class="container">
             <h1>The Minty Cat</h1>
             <p class="subtitle">Artisanal Ginger Beer</p>
 			<p>
-				<img src="images/gingerbeer/TheMintyCat_logo.png" alt="alternative">
+				<img src="images/gingerbeer/TheMintyCat_logo.png" alt="The Minty Cat logo">
 			</p>
             <div class="tagline">100% Natural • No Additives • Handcrafted</div>
         </div>
@@ -141,29 +158,13 @@
             </div>
 
             <!-- Product Images Slideshow -->
-            <div class="slideshow-container">
-                <div class="slide active">
-                    <img src="./images/gingerbeer/slides/gingerbeer-01.jpg" alt="The Minty Cat Bottles - Classic and Intense versions">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-02.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-03.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-04.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-05.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
-                </div>
-                <div class="slide">
-                    <img src="./images/gingerbeer/slides/gingerbeer-06.jpg" alt="The Minty Cat Ginger Beer bottles showcase">
-                </div>
+            <div class="slideshow-container" data-bind="slides" data-bind-type="slideshow" role="region" aria-roledescription="carousel" aria-label="The Minty Cat product photos">
+                <p class="content-status">Loading photos…</p>
+                <noscript><p class="content-status">Enable JavaScript to view the photos.</p></noscript>
                 
                 <!-- Navigation arrows -->
-                <button class="prev">❮</button>
-                <button class="next">❯</button>
+                <button class="prev" type="button" aria-label="Previous slide">❮</button>
+                <button class="next" type="button" aria-label="Next slide">❯</button>
             </div>
         </div>
     </section>
@@ -179,7 +180,7 @@
                         <i class="fas fa-leaf"></i>
                     </div>
                     <h3>Classic Version</h3>
-                    <p>Milde and sweet, perfect for those who prefer a gentle introduction to ginger beer. Smooth and refreshing with a balanced ginger kick.</p>
+                    <p>Mild and sweet, perfect for those who prefer a gentle introduction to ginger beer. Smooth and refreshing with a balanced ginger kick.</p>
                     
                     <div class="ingredients-list">
                         <h4>Composition:</h4>
@@ -241,20 +242,20 @@
                 </div>
             </div>
 
-            <!-- Process Images Placeholders -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px;">
-                <div class="image-placeholder">
-                    <i class="fas fa-seedling"></i>
-                    Fresh Ginger Preparation
-                </div>
-                <div class="image-placeholder">
-                    <i class="fas fa-flask"></i>
-                    Brewing Process
-                </div>
-                <div class="image-placeholder">
-                    <i class="fas fa-wine-bottle"></i>
-                    Final Product
-                </div>
+            <!-- Process photos -->
+            <div class="process-photos">
+                <figure>
+                    <img src="./images/gingerbeer/slides/gingerbeer-01.jpg" alt="The Minty Cat Classic and Intense bottles" loading="lazy" decoding="async">
+                    <figcaption>Classic and Intense bottles</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/gingerbeer/slides/gingerbeer-02.jpg" alt="The Minty Cat bottle served with cake and strawberries" loading="lazy" decoding="async">
+                    <figcaption>At the table</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/gingerbeer/slides/gingerbeer-06.jpg" alt="The Minty Cat ginger beer bottles" loading="lazy" decoding="async">
+                    <figcaption>Ready to share</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -300,15 +301,15 @@
             
             <div style="margin-top: 30px;">
 				<a href="mailto:themintycat@yassinlokhat.com?cc=yassinlokhat@gmail.com" class="btn-contact">
-                    <i class="fas fa-envelope"></i>
-                    Email Us
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    Email us
                 </a>
-				<a href="https://wa.me/261384727311" class="btn-contact" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
+				<a href="https://wa.me/261384727311" class="btn-contact" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     WhatsApp
                 </a>
-                <a href="https://www.facebook.com/share/1FSBQSkSaK/" class="btn-contact" target="_blank">
-                    <i class="fab fa-facebook"></i>
+                <a href="https://www.facebook.com/share/1FSBQSkSaK/" class="btn-contact" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                     Facebook
                 </a>
             </div>
@@ -321,9 +322,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-					<p>&copy; 2025 The Minty Cat by <a class="no-line" href="./index.html#header">Yassin Lokhat</a>. All rights reserved.</p>
+					<p>&copy; 2026 The Minty Cat by <a class="no-line" href="./index.html#header">Yassin Lokhat</a>. All rights reserved.</p>
                 </div> <!-- end of col -->
-            </div> <!-- enf of row -->
+            </div> <!-- end of row -->
         </div> <!-- end of container -->
         
     </div> <!-- end of copyright --> 
@@ -336,5 +337,6 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/slideshow.js"></script> <!-- JavaScript for Slideshow -->
+    <script src="js/content.js"></script> <!-- Load galleries and lists from JSON -->
 </body>
 </html>

@@ -6,39 +6,56 @@
     
 	<!-- HTML Meta Tags -->
 	<title>Yassin Lokhat's Portfolio - Paper art & Origami</title>
-	<meta name="description" content="Do you need an original decor for an event? Check my origami models.">
+	<meta name="description" content="Need original décor for an event? Browse my origami models.">
     <meta name="author" content="Yassin Lokhat">
 
 	<!-- Facebook Meta Tags -->
 	<meta property="og:site_name" content="Yassin Lokhat's Portfolio - Paper art & Origami" />
-	<meta property="og:site" content="https://yassinlokhat.com" />
 	<meta property="og:url" content="https://yassinlokhat.com/origami.html">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Yassin Lokhat's Portfolio - Paper art & Origami">
-	<meta property="og:description" content="Do you need an original decor for an event? Check my origami models.">
+	<meta property="og:description" content="Need original décor for an event? Browse my origami models.">
 	<meta property="og:image" content="https://yassinlokhat.com/images/origami/banner.jpg">
 
 	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="https://yassinlokhat.com/images/origami/banner.jpg">
-	<meta property="twitter:domain" content="yassinlokhat.com">
-	<meta property="twitter:url" content="https://yassinlokhat.com">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:domain" content="yassinlokhat.com">
+	<meta name="twitter:url" content="https://yassinlokhat.com/origami.html">
 	<meta name="twitter:title" content="Yassin Lokhat's Portfolio - Paper art & Origami">
-	<meta name="twitter:description" content="Do you need an original decor for an event? Check my origami models.">
+	<meta name="twitter:description" content="Need original décor for an event? Browse my origami models.">
 	<meta name="twitter:image" content="https://yassinlokhat.com/images/origami/banner.jpg">
     
     <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/slideshow.css" rel="stylesheet">
 	<link href="css/gingerbeer.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+	<link rel="canonical" href="https://yassinlokhat.com/origami.html">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "WebPage",
+	  "name": "Paper art & Origami — Yassin Lokhat",
+	  "url": "https://yassinlokhat.com/origami.html",
+	  "description": "Origami models and paper art by Yassin Lokhat, from festival displays to custom décor.",
+	  "isPartOf": {
+	    "@type": "WebSite",
+	    "name": "Yassin Lokhat's Portfolio",
+	    "url": "https://yassinlokhat.com/"
+	  }
+	}
+	</script>
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
+<body data-spy="scroll" data-target=".fixed-top" data-content-src="data/origami.json">
+	<a href="#gallery" class="sr-only sr-only-focusable">Skip to main content</a>
     
 	<!-- particles.js container -->
 	<div id="particles-js"></div>
@@ -49,12 +66,12 @@
         <div class="container">
             
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="alternative">Yassin Lokhat</a>  
+            <a class="navbar-brand logo-image" href="./index.html"><img src="images/favicon.png" alt="" width="30" height="30">Yassin Lokhat</a>  
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="./index.html">Yassin Lokhat</a> -->
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" aria-label="Toggle navigation" aria-controls="navbarsExampleDefault">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -64,7 +81,7 @@
                         <a class="nav-link page-scroll" href="./index.html#header">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link page-scroll" href="./index.html#services">Services ▾</a>
+                        <a class="nav-link page-scroll" href="./index.html#services" id="dropdown01">Services ▾</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="./development.html">Design & Development</a>
                             <div class="dropdown-divider"></div>
@@ -85,21 +102,21 @@
                 </ul>
                 <span class="nav-item social-icons">
                     <span class="fa-stack">
-                        <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin fa-stack-1x"></i>
+                        <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank" rel="noopener noreferrer" aria-label="Yassin Lokhat on LinkedIn">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fab fa-linkedin fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="https://wa.me/261384727311" target="_blank">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-whatsapp fa-stack-1x"></i>
+                        <a href="https://wa.me/261384727311" target="_blank" rel="noopener noreferrer" aria-label="Contact Yassin Lokhat on WhatsApp">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        <a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com" aria-label="Email Yassin Lokhat">
+                            <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                            <i class="fa fa-envelope fa-stack-1x" aria-hidden="true"></i>
                         </a>
                     </span>
                 </span>
@@ -127,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-fluid mt-5 mb-3" src="images/origami/banner.jpg" alt="alternative">
+                    <img class="img-fluid mt-5 mb-3" src="images/origami/banner.jpg" alt="Origami models displayed on a table" loading="lazy" decoding="async">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -140,8 +157,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <p>Being a big fan of Japanese culture, I fell in love with its language, its festivals, its history and its arts. And one of these arts that I am particularly passionate about is origami and paper arts in general.</p>
-                    <p class="mb-5">Origami, the traditional Japanese art of paper folding, transforms a simple sheet of paper into intricate and elegant designs through a series of precise folds and creases. This centuries-old practice, which dates back to the 17th century or earlier, relies solely on the skillful manipulation of paper to create a wide array of forms, from animals and plants to complex geometric shapes. Modern origami has evolved to include mathematical and engineering principles, allowing artists to craft highly sophisticated models that challenge the boundaries of creativity and precision. The art of origami not only serves as a meditative and artistic pursuit but also finds applications in fields such as education, therapy, and even technology, where its principles inspire innovative solutions in areas like robotics and space exploration.</p>
+                    <p>As a fan of Japanese culture, I fell in love with its language, festivals, history and arts. One of the arts I am particularly passionate about is origami and paper crafts in general.</p>
+                    <p class="mb-5">Origami, the traditional Japanese art of paper folding, turns a simple sheet of paper into intricate designs through a series of precise folds. This centuries-old practice, which dates back to the 17th century or earlier, relies on skillful folding to create animals, plants and complex geometric shapes. Modern origami also draws on mathematics and engineering, allowing highly sophisticated models. It is a meditative and artistic pursuit, and its principles have inspired solutions in education, therapy, robotics and space exploration.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -154,239 +171,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-                    <h2 class="mb-3">Some of my realizations</h2>
-                    <p>As you can see in the following slides, in years of practice I've made many models, some are common and some are unique.</p>
+                    <h2 class="mb-3">Some of my work</h2>
+                    <p>As you can see in the following slides, years of practice have produced many models — some familiar, some unique.</p>
 					<div class="text-container">
 						<div class="col-xl-10  offset-xl-1">
 							<!-- Product Images Slideshow -->
-							<div class="slideshow-container">
+							<div class="slideshow-container" data-bind="slides" data-bind-type="slideshow" role="region" aria-roledescription="carousel" aria-label="Origami gallery">
+								<p class="content-status">Loading gallery…</p>
+								<noscript><p class="content-status">Enable JavaScript to view the gallery.</p></noscript>
 
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-01.jpg" alt="origami-01">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-02.jpg" alt="origami-02">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-03.jpg" alt="origami-03">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-04.jpg" alt="origami-04">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-05.jpg" alt="origami-05">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-06.jpg" alt="origami-06">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-07.jpg" alt="origami-07">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-08.jpg" alt="origami-08">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-09.jpg" alt="origami-09">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-10.jpg" alt="origami-10">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-11.jpg" alt="origami-11">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-12.jpg" alt="origami-12">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-13.jpg" alt="origami-13">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-14.jpg" alt="origami-14">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-15.jpg" alt="origami-15">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-16.jpg" alt="origami-16">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-17.jpg" alt="origami-17">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-18.jpg" alt="origami-18">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-19.jpg" alt="origami-19">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-20.jpg" alt="origami-20">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-21.jpg" alt="origami-21">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-22.jpg" alt="origami-22">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-23.jpg" alt="origami-23">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-24.jpg" alt="origami-24">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-25.jpg" alt="origami-25">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-26.jpg" alt="origami-26">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-27.jpg" alt="origami-27">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-28.jpg" alt="origami-28">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-29.jpg" alt="origami-29">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-30.jpg" alt="origami-30">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-31.jpg" alt="origami-31">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-32.jpg" alt="origami-32">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-33.jpg" alt="origami-33">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-34.jpg" alt="origami-34">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-35.jpg" alt="origami-35">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-36.jpg" alt="origami-36">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-37.jpg" alt="origami-37">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-38.jpg" alt="origami-38">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-39.jpg" alt="origami-39">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-40.jpg" alt="origami-40">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-41.jpg" alt="origami-41">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-42.jpg" alt="origami-42">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-43.jpg" alt="origami-43">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-44.jpg" alt="origami-44">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-45.jpg" alt="origami-45">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-46.jpg" alt="origami-46">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-47.jpg" alt="origami-47">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-48.jpg" alt="origami-48">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-49.jpg" alt="origami-49">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-50.jpg" alt="origami-50">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-51.jpg" alt="origami-51">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-52.jpg" alt="origami-52">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-53.jpg" alt="origami-53">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-54.jpg" alt="origami-54">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-55.jpg" alt="origami-55">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-56.jpg" alt="origami-56">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-57.jpg" alt="origami-57">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-58.jpg" alt="origami-58">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-59.jpg" alt="origami-59">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-60.jpg" alt="origami-60">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-61.jpg" alt="origami-61">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-62.jpg" alt="origami-62">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-63.jpg" alt="origami-63">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-64.jpg" alt="origami-64">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-65.jpg" alt="origami-65">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-66.jpg" alt="origami-66">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-67.jpg" alt="origami-67">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-68.jpg" alt="origami-68">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-69.jpg" alt="origami-69">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-70.jpg" alt="origami-70">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-71.jpg" alt="origami-71">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-72.jpg" alt="origami-72">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-73.jpg" alt="origami-73">
-								</div>
-								<div class="slide active">
-									<img src="./images/origami/slides/origami-74.jpg" alt="origami-74">
-								</div>
-								
 								<!-- Navigation arrows -->
-								<button class="prev">❮</button>
-								<button class="next">❯</button>
+								<button class="prev" type="button" aria-label="Previous slide">❮</button>
+								<button class="next" type="button" aria-label="Next slide">❯</button>
 							</div>
 						</div> <!-- end of basic-4 -->
 					</div> <!-- end of text-container -->
@@ -402,90 +198,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h2 class="mb-4">Some highlight on specific tables</h2>
-                    <p>Since 2014, I participated in many festivals and conventions, and I made some pieces for specific clients.</p>
+                    <h2 class="mb-4">Highlights from selected displays</h2>
+                    <p>Since 2014, I have taken part in many festivals and conventions, and I have made pieces for specific clients.</p>
 					
 					<!-- Works -->
 					<div class="basic-4">
 						<div class="container">
-							<div class="row">
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/manga-mania.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>For <strong>Manga Mania Festival</strong></p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/magic-land.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>For <strong>Magic Land</strong></p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/aegyoh-show.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>For <strong>Aegyoh Show</strong></p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-							</div> <!-- end of row -->
-							<div class="row">
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/home-decor.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>A <strong>Home decor</strong> for a private client</p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/store-decor.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>Some <strong>Store decor</strong> for a souvenir shop</p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/football.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>A <strong>gift</strong> for a football lover</p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-							</div> <!-- end of row -->
-							<div class="row">
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/from-wood-to-paper.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>From <strong>wood</strong> to <strong>paper</strong></p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/giant-peacock.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>A <strong>Giant peacock</strong> with more than <strong>1500</strong> pieces</p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-								<div class="col-lg-4">
-									<div class="text-container">
-										<div class="image-container">
-											<img class="img-fluid" src="images/origami/tiny-flower.jpg" alt="alternative">
-										</div> <!-- end of image-container -->
-										<p>The <strong>tiniest flower pot</strong> I've ever made</p>
-									</div> <!-- end of text-container -->
-								</div> <!-- end of col -->
-							</div> <!-- end of row -->
+							<div class="row" data-bind="highlights" data-bind-type="highlights">
+								<p class="content-status">Loading highlights…</p>
+							</div>
 						</div> <!-- end of container -->
 					</div> <!-- end of basic-4 -->
 					<!-- end of works -->
@@ -502,10 +223,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="text-box center-text mb-5">
-                        <h3>A little talk about Neko Club</h3>
-						<img class="img-fluid mb-5" src="images/origami/neko-logo.png" alt="alternative">
-                        <p>As told above, I am a fan of the Japanese culture and I shared this passion with a lot of my friends. In 2014, we decided to create a club, called Neko (cat in japanese language) and we participated to many events, festivals and conventions. In addition to Origami, we also did other stuff like cosplays or tabletop board games.</p>
-                        <p>Although the club was dissolved in 2018, its spirit remains through its members who continue to explore their passion, the Origami and Paper Art in my case.</p>
+                        <h3>A few words about Neko Club</h3>
+						<img class="img-fluid mb-5" src="images/origami/neko-logo.png" alt="Neko Club logo" loading="lazy" decoding="async">
+                        <p>As mentioned above, I am a fan of Japanese culture and I shared that passion with many friends. In 2014 we created a club called Neko (Japanese for cat) and took part in events, festivals and conventions. Besides origami, we also did cosplay and tabletop board games.</p>
+                        <p>The club was dissolved in 2018, but its spirit lives on through its members — in my case, through origami and paper art.</p>
                     </div> <!-- end of text-box -->
 
                     <a class="btn-solid-reg mb-5" href="./index.html">Back</a>
@@ -523,21 +244,21 @@
                 <div class="col-lg-12">
                     <div class="social-container">
                         <span class="fa-stack">
-                            <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-linkedin fa-stack-1x"></i>
+                            <a href="https://www.linkedin.com/in/yassin-lokhat/" target="_blank" rel="noopener noreferrer" aria-label="Yassin Lokhat on LinkedIn">
+                                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fab fa-linkedin fa-stack-1x" aria-hidden="true"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://wa.me/261384727311" target="_blank">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-whatsapp fa-stack-1x"></i>
+                            <a href="https://wa.me/261384727311" target="_blank" rel="noopener noreferrer" aria-label="Contact Yassin Lokhat on WhatsApp">
+                                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fab fa-whatsapp fa-stack-1x" aria-hidden="true"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-							<a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fa fa-envelope fa-stack-1x"></i>
+							<a href="mailto:contact@yassinlokhat.com?cc=yassinlokhat@gmail.com" aria-label="Email Yassin Lokhat">
+								<i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fa fa-envelope fa-stack-1x" aria-hidden="true"></i>
 							</a>
                         </span>
                     </div> <!-- end of social-container -->
@@ -555,15 +276,7 @@
                 <div class="col-lg-12">
                     <p class="p-small">Copyright © <a class="no-line" href="./index.html#header">Yassin Lokhat</a></p>
                 </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
+            </div> <!-- end of row -->
         </div> <!-- end of container -->
         
     </div> <!-- end of copyright --> 
@@ -571,7 +284,6 @@
     
     	
     <!-- Scripts -->
-	<script src="js/particles.min.js"></script>
 	<script src="js/app.js"></script>
 
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
@@ -579,5 +291,6 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/slideshow.js"></script> <!-- JavaScript for Slideshow -->
+    <script src="js/content.js"></script> <!-- Load galleries and lists from JSON -->
 </body>
 </html>
