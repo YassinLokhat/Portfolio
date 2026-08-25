@@ -4,7 +4,7 @@
       "id": "upsilon-apps-passkey",
       "name": "Upsilon.Apps.Passkey",
       "inNav": true,
-      "image": "images/development/passkey/user.png",
+      "image": "./images/development/passkey/user.png",
       "imageAlt": "Upsilon Passkey user account screen",
       "description": "A fully offline and secure **password manager**. It supports multiple users, multiple accounts per service, a fully customizable password generator, and more.",
       "downloads": [
@@ -20,32 +20,32 @@
       "galleryLabel": "Upsilon Passkey screenshots",
       "slides": [
         {
-          "src": "images/development/passkey/login.png",
+          "src": "./images/development/passkey/login.png",
           "alt": "Upsilon Passkey login page",
           "caption": "The minimalist login page"
         },
         {
-          "src": "images/development/passkey/setting-passwords.png",
+          "src": "./images/development/passkey/setting-passwords.png",
           "alt": "Upsilon Passkey user login and password settings",
           "caption": "The user login and passwords setting page"
         },
         {
-          "src": "images/development/passkey/settings-options.png",
+          "src": "./images/development/passkey/settings-options.png",
           "alt": "Upsilon Passkey user options settings",
           "caption": "The user options settings page"
         },
         {
-          "src": "images/development/passkey/password-generator.png",
+          "src": "./images/development/passkey/password-generator.png",
           "alt": "Upsilon Passkey custom password generator",
           "caption": "The custom password generator page"
         },
         {
-          "src": "images/development/passkey/logs.png",
+          "src": "./images/development/passkey/logs.png",
           "alt": "Upsilon Passkey logs page",
           "caption": "The logs page"
         },
         {
-          "src": "images/development/passkey/warnings.png",
+          "src": "./images/development/passkey/warnings.png",
           "alt": "Upsilon Passkey warnings page",
           "caption": "The warnings page"
         }
@@ -55,7 +55,7 @@
       "id": "upsilon-apps-tools-baseConverter",
       "name": "Upsilon.Apps.Tools.BaseConverter",
       "inNav": true,
-      "image": "images/development/baseconverter.png",
+      "image": "./images/development/baseconverter.png",
       "imageAlt": "Upsilon BaseConverter converting integers between numeric bases",
       "description": "A tool for converting integers **from any base to any other base**, with support for **logical operators (And, Or, Not, Xor, Shift), addition and multiplication**. The size of the number is virtually unlimited.",
       "downloads": [
@@ -73,7 +73,7 @@
       "id": "upsilon-apps-tools-statistics",
       "name": "Upsilon.Apps.Tools.Statistics",
       "inNav": true,
-      "image": "images/development/statistics.png",
+      "image": "./images/development/statistics.png",
       "imageAlt": "Upsilon Statistics displaying CSV data as graphs",
       "description": "This tool can display a **comma-separated CSV** data file as a **graph with statistics (minimum, maximum, average, and more)**. Each column in the CSV is shown as a row in the tool.",
       "downloads": [
@@ -91,7 +91,7 @@
       "id": "upsilon-apps-tools-powersourceautobrightness",
       "name": "Upsilon.Apps.Tools.PowerSourceAutoBrightness",
       "inNav": false,
-      "image": "images/development/powersourceautobrightness.png",
+      "image": "./images/development/powersourceautobrightness.png",
       "imageAlt": "Power Source Auto Brightness notification icon and settings",
       "description": "This tool automatically changes the **screen brightness**: 100% when the power source is plugged in, and 0% when it is unplugged. A single click on the notification icon also **toggles** the brightness.",
       "downloads": [
@@ -109,7 +109,7 @@
       "id": "upsilon-apps-tools-toolkit",
       "name": "Upsilon.Apps.Tools.Toolkit",
       "inNav": true,
-      "image": "images/development/toolkit/toolkit.png",
+      "image": "./images/development/toolkit/toolkit.png",
       "imageAlt": "Upsilon Toolkit home screen with several small utilities",
       "description": "A **toolkit** that groups several **lightweight tools**.",
       "downloads": [
@@ -125,22 +125,22 @@
       "galleryLabel": "Upsilon Toolkit screenshots",
       "slides": [
         {
-          "src": "images/development/toolkit/filetypeextractor.png",
+          "src": "./images/development/toolkit/filetypeextractor.png",
           "alt": "File type extractor moving files of a given type from one folder to another",
           "caption": "Move all files of a given type from a directory to another"
         },
         {
-          "src": "images/development/toolkit/qrcodegenerator.png",
+          "src": "./images/development/toolkit/qrcodegenerator.png",
           "alt": "QR code generator and reader",
           "caption": "Generate or read QR codes"
         },
         {
-          "src": "images/development/toolkit/smartduplicate.png",
+          "src": "./images/development/toolkit/smartduplicate.png",
           "alt": "Smart Duplicate: duplicate text and replace specific parts",
           "caption": "Duplicate text and replace specific parts"
         },
         {
-          "src": "images/development/toolkit/tinyfier.png",
+          "src": "./images/development/toolkit/tinyfier.png",
           "alt": "Tinyfier compressing image, audio and video files with ImageMagick and FFmpeg",
           "caption": "Compress image, audio and video files using ImageMagick and FFmpeg"
         }

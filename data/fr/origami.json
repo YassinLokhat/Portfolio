@@ -1,6 +1,6 @@
 {
   "slides": {
-    "directory": "/images/origami/slides/",
+    "directory": "../images/origami/slides/",
     "prefix": "origami-",
     "extension": ".jpg",
     "from": 1,
@@ -10,47 +10,47 @@
   },
   "highlights": [
     {
-      "src": "/images/origami/manga-mania.jpg",
+      "src": "../images/origami/manga-mania.jpg",
       "alt": "Stand origami du Neko Club au Manga Mania Festival",
       "caption": "Pour le **Manga Mania Festival**"
     },
     {
-      "src": "/images/origami/magic-land.jpg",
+      "src": "../images/origami/magic-land.jpg",
       "alt": "Exposition origami pour Magic Land",
       "caption": "Pour **Magic Land**"
     },
     {
-      "src": "/images/origami/aegyoh-show.jpg",
+      "src": "../images/origami/aegyoh-show.jpg",
       "alt": "Exposition origami pour Aegyoh Show",
       "caption": "Pour **Aegyoh Show**"
     },
     {
-      "src": "/images/origami/home-decor.jpg",
+      "src": "../images/origami/home-decor.jpg",
       "alt": "Décoration d'intérieur en origami pour un client particulier",
       "caption": "Une **décoration d'intérieur** pour un client particulier"
     },
     {
-      "src": "/images/origami/store-decor.jpg",
+      "src": "../images/origami/store-decor.jpg",
       "alt": "Décoration de boutique en origami pour un magasin de souvenirs",
       "caption": "Une **décoration de boutique** pour un magasin de souvenirs"
     },
     {
-      "src": "/images/origami/football.jpg",
+      "src": "../images/origami/football.jpg",
       "alt": "Cadeau origami pour un amateur de football",
       "caption": "Un **cadeau** pour un amateur de football"
     },
     {
-      "src": "/images/origami/from-wood-to-paper.jpg",
+      "src": "../images/origami/from-wood-to-paper.jpg",
       "alt": "Objet en bois recréé en papier origami",
       "caption": "Du **bois** au **papier**"
     },
     {
-      "src": "/images/origami/giant-peacock.jpg",
+      "src": "../images/origami/giant-peacock.jpg",
       "alt": "Paon origami modulaire géant de plus de 1 500 pièces",
       "caption": "Un **paon géant** de plus de **1500** pièces"
     },
     {
-      "src": "/images/origami/tiny-flower.jpg",
+      "src": "../images/origami/tiny-flower.jpg",
       "alt": "Minuscule pot de fleurs en origami",
       "caption": "Le **plus petit pot de fleurs** que j'aie jamais plié"
     }
