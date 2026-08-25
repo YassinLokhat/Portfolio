@@ -1,27 +1,27 @@
 {
   "slides": [
     {
-      "src": "images/gingerbeer/slides/gingerbeer-01.jpg",
+      "src": "./images/gingerbeer/slides/gingerbeer-01.jpg",
       "alt": "The Minty Cat Classic and Intense bottles"
     },
     {
-      "src": "images/gingerbeer/slides/gingerbeer-02.jpg",
+      "src": "./images/gingerbeer/slides/gingerbeer-02.jpg",
       "alt": "The Minty Cat bottle on a table with cake and strawberries"
     },
     {
-      "src": "images/gingerbeer/slides/gingerbeer-03.jpg",
+      "src": "./images/gingerbeer/slides/gingerbeer-03.jpg",
       "alt": "The Minty Cat ginger beer bottles"
     },
     {
-      "src": "images/gingerbeer/slides/gingerbeer-04.jpg",
+      "src": "./images/gingerbeer/slides/gingerbeer-04.jpg",
       "alt": "The Minty Cat ginger beer bottles"
     },
     {
-      "src": "images/gingerbeer/slides/gingerbeer-05.jpg",
+      "src": "./images/gingerbeer/slides/gingerbeer-05.jpg",
       "alt": "The Minty Cat ginger beer bottles"
     },
     {
-      "src": "images/gingerbeer/slides/gingerbeer-06.jpg",
+      "src": "./images/gingerbeer/slides/gingerbeer-06.jpg",
       "alt": "The Minty Cat ginger beer bottles"
     }
   ]

@@ -11,7 +11,31 @@
  */
 
 (function () {
-	var LOAD_ERROR = "Could not load this content. Open the site through a local web server rather than a file:// URL.";
+	var UI = {
+		en: {
+			loadError: "Could not load this content. Open the site through a local web server rather than a file:// URL.",
+			noSlides: "No slides yet.",
+			prev: "Previous slide",
+			next: "Next slide",
+			downloadBefore: "Download the ",
+			downloadJoin: " or ",
+			downloadAfter: "."
+		},
+		fr: {
+			loadError: "Impossible de charger ce contenu. Ouvrez le site via un serveur web local plutôt que via une URL file://.",
+			noSlides: "Aucune diapositive pour le moment.",
+			prev: "Diapositive précédente",
+			next: "Diapositive suivante",
+			downloadBefore: "Télécharger ",
+			downloadJoin: " ou ",
+			downloadAfter: "."
+		}
+	};
+
+	function ui() {
+		var lang = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
+		return UI[lang] || UI.en;
+	}
 
 	function escapeHtml(value) {
 		return String(value)
@@ -97,7 +121,7 @@
 			var prev = document.createElement("button");
 			prev.className = "prev";
 			prev.type = "button";
-			prev.setAttribute("aria-label", "Previous slide");
+			prev.setAttribute("aria-label", ui().prev);
 			prev.textContent = "❮";
 			container.appendChild(prev);
 		}
@@ -105,7 +129,7 @@
 			var next = document.createElement("button");
 			next.className = "next";
 			next.type = "button";
-			next.setAttribute("aria-label", "Next slide");
+			next.setAttribute("aria-label", ui().next);
 			next.textContent = "❯";
 			container.appendChild(next);
 		}
@@ -122,7 +146,7 @@
 		});
 
 		if (items.length === 0) {
-			showStatus(container, "No slides yet.");
+			showStatus(container, ui().noSlides);
 		}
 	}
 
@@ -166,11 +190,12 @@
 			return '<a href="' + escapeHtml(item.href) + '">' + escapeHtml(item.label) + "</a>";
 		});
 
+		var copy = ui();
 		var joined = links.length === 1
 			? links[0]
-			: links.slice(0, -1).join(", ") + " or " + links[links.length - 1];
+			: links.slice(0, -1).join(", ") + copy.downloadJoin + links[links.length - 1];
 
-		return "Download the " + joined + ".";
+		return copy.downloadBefore + joined + copy.downloadAfter;
 	}
 
 	function fillProjects(container, projects) {
@@ -294,7 +319,7 @@
 			if (el.classList.contains("dropdown-menu")) {
 				return;
 			}
-			showStatus(el, LOAD_ERROR, true);
+			showStatus(el, ui().loadError, true);
 		});
 	}
 
