@@ -1,0 +1,150 @@
+{
+  "projects": [
+    {
+      "id": "upsilon-apps-passkey",
+      "name": "Upsilon.Apps.Passkey",
+      "inNav": true,
+      "image": "../images/development/passkey/user.png",
+      "imageAlt": "Écran de compte utilisateur d'Upsilon Passkey",
+      "description": "Un **gestionnaire de mots de passe** entièrement hors ligne et sécurisé. Il gère plusieurs utilisateurs, plusieurs comptes par service, un générateur de mots de passe entièrement personnalisable, et plus encore.",
+      "downloads": [
+        {
+          "label": "l'installateur",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.setup.exe"
+        },
+        {
+          "label": "la version portable",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.portable.zip"
+        }
+      ],
+      "galleryLabel": "Captures d'écran d'Upsilon Passkey",
+      "slides": [
+        {
+          "src": "../images/development/passkey/login.png",
+          "alt": "Page de connexion d'Upsilon Passkey",
+          "caption": "La page de connexion minimaliste"
+        },
+        {
+          "src": "../images/development/passkey/setting-passwords.png",
+          "alt": "Paramètres de connexion et de mots de passe d'Upsilon Passkey",
+          "caption": "La page des identifiants et des mots de passe"
+        },
+        {
+          "src": "../images/development/passkey/settings-options.png",
+          "alt": "Paramètres des options utilisateur d'Upsilon Passkey",
+          "caption": "La page des options utilisateur"
+        },
+        {
+          "src": "../images/development/passkey/password-generator.png",
+          "alt": "Générateur de mots de passe personnalisé d'Upsilon Passkey",
+          "caption": "Le générateur de mots de passe personnalisé"
+        },
+        {
+          "src": "../images/development/passkey/logs.png",
+          "alt": "Page des journaux d'Upsilon Passkey",
+          "caption": "La page des journaux"
+        },
+        {
+          "src": "../images/development/passkey/warnings.png",
+          "alt": "Page des avertissements d'Upsilon Passkey",
+          "caption": "La page des avertissements"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-baseConverter",
+      "name": "Upsilon.Apps.Tools.BaseConverter",
+      "inNav": true,
+      "image": "../images/development/baseconverter.png",
+      "imageAlt": "Upsilon BaseConverter convertissant des entiers entre différentes bases",
+      "description": "Un outil pour convertir des entiers **d'une base quelconque vers une autre**, avec prise en charge des **opérateurs logiques (And, Or, Not, Xor, Shift), de l'addition et de la multiplication**. La taille du nombre est pratiquement illimitée.",
+      "downloads": [
+        {
+          "label": "l'installateur",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.setup.exe"
+        },
+        {
+          "label": "la version portable",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.portable.zip"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-statistics",
+      "name": "Upsilon.Apps.Tools.Statistics",
+      "inNav": true,
+      "image": "../images/development/statistics.png",
+      "imageAlt": "Upsilon Statistics affichant un fichier CSV sous forme de graphiques",
+      "description": "Cet outil affiche un fichier **CSV séparé par des virgules** sous forme de **graphique avec des statistiques (minimum, maximum, moyenne, et plus)**. Chaque colonne du CSV apparaît comme une ligne dans l'outil.",
+      "downloads": [
+        {
+          "label": "l'installateur",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.setup.exe"
+        },
+        {
+          "label": "la version portable",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.portable.zip"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-powersourceautobrightness",
+      "name": "Upsilon.Apps.Tools.PowerSourceAutoBrightness",
+      "inNav": false,
+      "image": "../images/development/powersourceautobrightness.png",
+      "imageAlt": "Icône de notification et paramètres de Power Source Auto Brightness",
+      "description": "Cet outil règle automatiquement la **luminosité de l'écran** : 100 % sur secteur, 0 % sur batterie. Un simple clic sur l'icône de notification **bascule** aussi la luminosité.",
+      "downloads": [
+        {
+          "label": "l'installateur",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.setup.exe"
+        },
+        {
+          "label": "la version portable",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.portable.zip"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-toolkit",
+      "name": "Upsilon.Apps.Tools.Toolkit",
+      "inNav": true,
+      "image": "../images/development/toolkit/toolkit.png",
+      "imageAlt": "Écran d'accueil d'Upsilon Toolkit avec plusieurs petits utilitaires",
+      "description": "Une **boîte à outils** qui regroupe plusieurs **utilitaires légers**.",
+      "downloads": [
+        {
+          "label": "l'installateur",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.setup.exe"
+        },
+        {
+          "label": "la version portable",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.portable.zip"
+        }
+      ],
+      "galleryLabel": "Captures d'écran d'Upsilon Toolkit",
+      "slides": [
+        {
+          "src": "../images/development/toolkit/filetypeextractor.png",
+          "alt": "Extracteur de type de fichier déplaçant les fichiers d'un type donné d'un dossier à un autre",
+          "caption": "Déplacer tous les fichiers d'un type donné d'un dossier vers un autre"
+        },
+        {
+          "src": "../images/development/toolkit/qrcodegenerator.png",
+          "alt": "Générateur et lecteur de QR codes",
+          "caption": "Générer ou lire des QR codes"
+        },
+        {
+          "src": "../images/development/toolkit/smartduplicate.png",
+          "alt": "Smart Duplicate : dupliquer un texte et en remplacer certaines parties",
+          "caption": "Dupliquer un texte et en remplacer certaines parties"
+        },
+        {
+          "src": "../images/development/toolkit/tinyfier.png",
+          "alt": "Tinyfier compressant des fichiers image, audio et vidéo avec ImageMagick et FFmpeg",
+          "caption": "Compresser des fichiers image, audio et vidéo avec ImageMagick et FFmpeg"
+        }
+      ]
+    }
+  ]
+}

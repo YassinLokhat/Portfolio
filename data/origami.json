@@ -1,0 +1,58 @@
+{
+  "slides": {
+    "directory": "./images/origami/slides/",
+    "prefix": "origami-",
+    "extension": ".jpg",
+    "from": 1,
+    "to": 75,
+    "pad": 2,
+    "alt": "Origami models on display, photo {n} of {total}"
+  },
+  "highlights": [
+    {
+      "src": "./images/origami/manga-mania.jpg",
+      "alt": "Neko Club origami booth at Manga Mania Festival",
+      "caption": "For **Manga Mania Festival**"
+    },
+    {
+      "src": "./images/origami/magic-land.jpg",
+      "alt": "Origami display for Magic Land",
+      "caption": "For **Magic Land**"
+    },
+    {
+      "src": "./images/origami/aegyoh-show.jpg",
+      "alt": "Origami display for Aegyoh Show",
+      "caption": "For **Aegyoh Show**"
+    },
+    {
+      "src": "./images/origami/home-decor.jpg",
+      "alt": "Origami home décor for a private client",
+      "caption": "A **Home decor** for a private client"
+    },
+    {
+      "src": "./images/origami/store-decor.jpg",
+      "alt": "Origami store décor for a souvenir shop",
+      "caption": "Some **Store decor** for a souvenir shop"
+    },
+    {
+      "src": "./images/origami/football.jpg",
+      "alt": "Origami gift for a football fan",
+      "caption": "A **gift** for a football lover"
+    },
+    {
+      "src": "./images/origami/from-wood-to-paper.jpg",
+      "alt": "Wooden object recreated in origami paper",
+      "caption": "From **wood** to **paper**"
+    },
+    {
+      "src": "./images/origami/giant-peacock.jpg",
+      "alt": "Giant modular origami peacock made of more than 1,500 pieces",
+      "caption": "A **Giant peacock** with more than **1500** pieces"
+    },
+    {
+      "src": "./images/origami/tiny-flower.jpg",
+      "alt": "Tiny origami flower pot",
+      "caption": "The **tiniest flower pot** I've ever made"
+    }
+  ]
+}
