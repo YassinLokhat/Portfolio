@@ -55,7 +55,7 @@
           "caption": "La page des alertes"
         },
         {
-          "src": "../images/development/passkey/logs.png",
+          "src": "../images/development/passkey/identifiers.png",
           "alt": "Page du filtre des identifiants d'Upsilon Passkey",
           "caption": "La page du filtre des identifiants"
         }
