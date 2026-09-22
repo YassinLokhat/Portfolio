@@ -19,7 +19,9 @@
 			next: "Next slide",
 			downloadBefore: "Download the ",
 			downloadJoin: " or ",
-			downloadAfter: "."
+			downloadAfter: ".",
+			sourceBefore: "The source code is available on ",
+			sourceAfter: "."
 		},
 		fr: {
 			loadError: "Impossible de charger ce contenu. Ouvrez le site via un serveur web local plutôt que via une URL file://.",
@@ -28,7 +30,9 @@
 			next: "Diapositive suivante",
 			downloadBefore: "Télécharger ",
 			downloadJoin: " ou ",
-			downloadAfter: "."
+			downloadAfter: ".",
+			sourceBefore: "Le code source est disponible sur ",
+			sourceAfter: "."
 		}
 	};
 
@@ -181,13 +185,17 @@
 		});
 	}
 
+	function externalLink(href, label) {
+		return '<a href="' + escapeHtml(href) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(label) + "</a>";
+	}
+
 	function downloadSentence(downloads) {
 		if (!downloads || downloads.length === 0) {
 			return "";
 		}
 
 		var links = downloads.map(function (item) {
-			return '<a href="' + escapeHtml(item.href) + '">' + escapeHtml(item.label) + "</a>";
+			return externalLink(item.href, item.label);
 		});
 
 		var copy = ui();
@@ -196,6 +204,21 @@
 			: links.slice(0, -1).join(", ") + copy.downloadJoin + links[links.length - 1];
 
 		return copy.downloadBefore + joined + copy.downloadAfter;
+	}
+
+	function sourceSentence(source) {
+		if (!source) {
+			return "";
+		}
+
+		var href = typeof source === "string" ? source : source.href;
+		var label = typeof source === "string" ? "GitHub" : (source.label || "GitHub");
+		if (!href) {
+			return "";
+		}
+
+		var copy = ui();
+		return copy.sourceBefore + externalLink(href, label) + copy.sourceAfter;
 	}
 
 	function fillProjects(container, projects) {
@@ -233,6 +256,13 @@
 				var dl = document.createElement("p");
 				dl.innerHTML = downloads;
 				wrap.appendChild(dl);
+			}
+
+			var source = sourceSentence(project.source);
+			if (source) {
+				var src = document.createElement("p");
+				src.innerHTML = source;
+				wrap.appendChild(src);
 			}
 
 			var slides = expandSlides(project.slides);

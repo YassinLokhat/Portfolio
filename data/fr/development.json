@@ -6,17 +6,17 @@
       "inNav": true,
       "image": "../images/development/passkey/user.png",
       "imageAlt": "Écran de compte utilisateur d'Upsilon Passkey",
-      "description": "Un **gestionnaire de mots de passe** entièrement hors ligne et sécurisé. Il gère plusieurs utilisateurs, plusieurs comptes par service, un générateur de mots de passe entièrement personnalisable, et plus encore.",
+      "description": "Un **gestionnaire de mots de passe** entièrement hors ligne et sécurisé. Les coffres restent sur l'appareil dans un fichier chiffré. Il gère plusieurs comptes par service, un générateur de mots de passe entièrement personnalisable, la détection de fuites, et plus encore.",
       "downloads": [
         {
-          "label": "l'installateur",
-          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.setup.exe"
-        },
-        {
-          "label": "la version portable",
-          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.portable.zip"
+          "label": "le client Windows (x64)",
+          "href": "https://github.com/YassinLokhat/Upsilon.Apps.Passkey/releases/download/wpf-v1.2.0/Upsilon.Apps.Passkey.GUI.WPF-1.2.0-win-x64.zip"
         }
       ],
+      "source": {
+        "label": "GitHub",
+        "href": "https://github.com/YassinLokhat/Upsilon.Apps.Passkey"
+      },
       "galleryLabel": "Captures d'écran d'Upsilon Passkey",
       "slides": [
         {
@@ -25,14 +25,19 @@
           "caption": "La page de connexion minimaliste"
         },
         {
-          "src": "../images/development/passkey/setting-passwords.png",
-          "alt": "Paramètres de connexion et de mots de passe d'Upsilon Passkey",
-          "caption": "La page des identifiants et des mots de passe"
+          "src": "../images/development/passkey/new-user.png",
+          "alt": "Page de création d'un nouvel utilisateur",
+          "caption": "La page de création d'un nouvel utilisateur"
         },
         {
-          "src": "../images/development/passkey/settings-options.png",
-          "alt": "Paramètres des options utilisateur d'Upsilon Passkey",
-          "caption": "La page des options utilisateur"
+          "src": "../images/development/passkey/app-settings.png",
+          "alt": "Paramètres de l'application Upsilon Passkey",
+          "caption": "La page des paramètres de de l'application Upsilon Passkey"
+        },
+        {
+          "src": "../images/development/passkey/user-settings.png",
+          "alt": "Paramètres de l'utilisateur Upsilon Passkey",
+          "caption": "La page des paramètres de de l'utilisateur Upsilon Passkey"
         },
         {
           "src": "../images/development/passkey/password-generator.png",
@@ -40,14 +45,19 @@
           "caption": "Le générateur de mots de passe personnalisé"
         },
         {
-          "src": "../images/development/passkey/logs.png",
-          "alt": "Page des journaux d'Upsilon Passkey",
-          "caption": "La page des journaux"
+          "src": "../images/development/passkey/activities.png",
+          "alt": "Page de l'historique des activités d'Upsilon Passkey",
+          "caption": "La page de l'historique des activités"
         },
         {
-          "src": "../images/development/passkey/warnings.png",
-          "alt": "Page des avertissements d'Upsilon Passkey",
-          "caption": "La page des avertissements"
+          "src": "../images/development/passkey/alerts.png",
+          "alt": "Page des alertes d'Upsilon Passkey",
+          "caption": "La page des alertes"
+        },
+        {
+          "src": "../images/development/passkey/logs.png",
+          "alt": "Page du filtre des identifiants d'Upsilon Passkey",
+          "caption": "La page du filtre des identifiants"
         }
       ]
     },
