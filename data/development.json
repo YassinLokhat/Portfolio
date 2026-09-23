@@ -1,0 +1,160 @@
+{
+  "projects": [
+    {
+      "id": "upsilon-apps-passkey",
+      "name": "Upsilon.Apps.Passkey",
+      "inNav": true,
+      "image": "./images/development/passkey/user.png",
+      "imageAlt": "Upsilon Passkey user account screen",
+      "description": "A fully offline and secure **password manager**. Vaults stay on the device in an encrypted file. It supports multiple accounts per service, a fully customizable password generator, leak detection, and more.",
+      "downloads": [
+        {
+          "label": "Windows client (x64)",
+          "href": "https://github.com/YassinLokhat/Upsilon.Apps.Passkey/releases/download/wpf-v1.2.0/Upsilon.Apps.Passkey.GUI.WPF-1.2.0-win-x64.zip"
+        }
+      ],
+      "source": {
+        "label": "GitHub",
+        "href": "https://github.com/YassinLokhat/Upsilon.Apps.Passkey"
+      },
+      "galleryLabel": "Upsilon Passkey screenshots",
+      "slides": [
+        {
+          "src": "./images/development/passkey/login.png",
+          "alt": "Upsilon Passkey login page",
+          "caption": "The minimalist login page"
+        },
+        {
+          "src": "./images/development/passkey/new-user.png",
+          "alt": "Upsilon Passkey new user page",
+          "caption": "The new user creation page"
+        },
+        {
+          "src": "./images/development/passkey/app-settings.png",
+          "alt": "Upsilon Passkey app settings",
+          "caption": "The app settings"
+        },
+        {
+          "src": "./images/development/passkey/user-settings.png",
+          "alt": "Upsilon Passkey user settings",
+          "caption": "The user settings page"
+        },
+        {
+          "src": "./images/development/passkey/password-generator.png",
+          "alt": "Upsilon Passkey custom password generator",
+          "caption": "The custom password generator page"
+        },
+        {
+          "src": "./images/development/passkey/activities.png",
+          "alt": "Upsilon Passkey activities page",
+          "caption": "The activities page"
+        },
+        {
+          "src": "./images/development/passkey/alerts.png",
+          "alt": "Upsilon Passkey alerts page",
+          "caption": "The alerts page"
+        },
+        {
+          "src": "./images/development/passkey/identifiers.png",
+          "alt": "Upsilon Passkey identifiers filter",
+          "caption": "The identifiers filter"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-baseConverter",
+      "name": "Upsilon.Apps.Tools.BaseConverter",
+      "inNav": true,
+      "image": "./images/development/baseconverter.png",
+      "imageAlt": "Upsilon BaseConverter converting integers between numeric bases",
+      "description": "A tool for converting integers **from any base to any other base**, with support for **logical operators (And, Or, Not, Xor, Shift), addition and multiplication**. The size of the number is virtually unlimited.",
+      "downloads": [
+        {
+          "label": "installer",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.setup.exe"
+        },
+        {
+          "label": "portable version",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/BaseConverter/Upsilon.Apps.Tools.BaseConverter.v2.1.1.portable.zip"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-statistics",
+      "name": "Upsilon.Apps.Tools.Statistics",
+      "inNav": true,
+      "image": "./images/development/statistics.png",
+      "imageAlt": "Upsilon Statistics displaying CSV data as graphs",
+      "description": "This tool can display a **comma-separated CSV** data file as a **graph with statistics (minimum, maximum, average, and more)**. Each column in the CSV is shown as a row in the tool.",
+      "downloads": [
+        {
+          "label": "installer",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.setup.exe"
+        },
+        {
+          "label": "portable version",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Statistics/Upsilon.Apps.Tools.Statistics.v1.2.0.portable.zip"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-powersourceautobrightness",
+      "name": "Upsilon.Apps.Tools.PowerSourceAutoBrightness",
+      "inNav": false,
+      "image": "./images/development/powersourceautobrightness.png",
+      "imageAlt": "Power Source Auto Brightness notification icon and settings",
+      "description": "This tool automatically changes the **screen brightness**: 100% when the power source is plugged in, and 0% when it is unplugged. A single click on the notification icon also **toggles** the brightness.",
+      "downloads": [
+        {
+          "label": "installer",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.setup.exe"
+        },
+        {
+          "label": "portable version",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/PowerSourceAutoBrightness/Upsilon.Apps.Tools.PowerSourceAutoBrightness.v1.0.0.portable.zip"
+        }
+      ]
+    },
+    {
+      "id": "upsilon-apps-tools-toolkit",
+      "name": "Upsilon.Apps.Tools.Toolkit",
+      "inNav": true,
+      "image": "./images/development/toolkit/toolkit.png",
+      "imageAlt": "Upsilon Toolkit home screen with several small utilities",
+      "description": "A **toolkit** that groups several **lightweight tools**.",
+      "downloads": [
+        {
+          "label": "installer",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.setup.exe"
+        },
+        {
+          "label": "portable version",
+          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/Tools/Toolkit/Upsilon.Apps.Tools.Toolkit.v1.2.0.portable.zip"
+        }
+      ],
+      "galleryLabel": "Upsilon Toolkit screenshots",
+      "slides": [
+        {
+          "src": "./images/development/toolkit/filetypeextractor.png",
+          "alt": "File type extractor moving files of a given type from one folder to another",
+          "caption": "Move all files of a given type from a directory to another"
+        },
+        {
+          "src": "./images/development/toolkit/qrcodegenerator.png",
+          "alt": "QR code generator and reader",
+          "caption": "Generate or read QR codes"
+        },
+        {
+          "src": "./images/development/toolkit/smartduplicate.png",
+          "alt": "Smart Duplicate: duplicate text and replace specific parts",
+          "caption": "Duplicate text and replace specific parts"
+        },
+        {
+          "src": "./images/development/toolkit/tinyfier.png",
+          "alt": "Tinyfier compressing image, audio and video files with ImageMagick and FFmpeg",
+          "caption": "Compress image, audio and video files using ImageMagick and FFmpeg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slides": [
+    {
+      "src": "../images/gingerbeer/slides/gingerbeer-01.jpg",
+      "alt": "Bouteilles Classic et Intense de The Minty Cat"
+    },
+    {
+      "src": "../images/gingerbeer/slides/gingerbeer-02.jpg",
+      "alt": "Bouteille The Minty Cat sur une table avec un gâteau et des fraises"
+    },
+    {
+      "src": "../images/gingerbeer/slides/gingerbeer-03.jpg",
+      "alt": "Bouteilles de ginger beer The Minty Cat"
+    },
+    {
+      "src": "../images/gingerbeer/slides/gingerbeer-04.jpg",
+      "alt": "Bouteilles de ginger beer The Minty Cat"
+    },
+    {
+      "src": "../images/gingerbeer/slides/gingerbeer-05.jpg",
+      "alt": "Bouteilles de ginger beer The Minty Cat"
+    },
+    {
+      "src": "../images/gingerbeer/slides/gingerbeer-06.jpg",
+      "alt": "Bouteilles de ginger beer The Minty Cat"
+    }
+  ]
+}
