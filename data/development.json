@@ -6,17 +6,17 @@
       "inNav": true,
       "image": "./images/development/passkey/user.png",
       "imageAlt": "Upsilon Passkey user account screen",
-      "description": "A fully offline and secure **password manager**. It supports multiple users, multiple accounts per service, a fully customizable password generator, and more.",
+      "description": "A fully offline and secure **password manager**. Vaults stay on the device in an encrypted file. It supports multiple accounts per service, a fully customizable password generator, leak detection, and more.",
       "downloads": [
         {
-          "label": "installer",
-          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.setup.exe"
-        },
-        {
-          "label": "portable version",
-          "href": "https://upsilonecosystem.yassinlokhat.com/Upsilon/Apps/PassKey/Upsilon.Apps.PassKey.v2.2.0.portable.zip"
+          "label": "Windows client (x64)",
+          "href": "https://github.com/YassinLokhat/Upsilon.Apps.Passkey/releases/download/wpf-v1.2.0/Upsilon.Apps.Passkey.GUI.WPF-1.2.0-win-x64.zip"
         }
       ],
+      "source": {
+        "label": "GitHub",
+        "href": "https://github.com/YassinLokhat/Upsilon.Apps.Passkey"
+      },
       "galleryLabel": "Upsilon Passkey screenshots",
       "slides": [
         {
@@ -25,14 +25,19 @@
           "caption": "The minimalist login page"
         },
         {
-          "src": "./images/development/passkey/setting-passwords.png",
-          "alt": "Upsilon Passkey user login and password settings",
-          "caption": "The user login and passwords setting page"
+          "src": "./images/development/passkey/new-user.png",
+          "alt": "Upsilon Passkey new user page",
+          "caption": "The new user creation page"
         },
         {
-          "src": "./images/development/passkey/settings-options.png",
-          "alt": "Upsilon Passkey user options settings",
-          "caption": "The user options settings page"
+          "src": "./images/development/passkey/app-settings.png",
+          "alt": "Upsilon Passkey app settings",
+          "caption": "The app settings"
+        },
+        {
+          "src": "./images/development/passkey/user-settings.png",
+          "alt": "Upsilon Passkey user settings",
+          "caption": "The user settings page"
         },
         {
           "src": "./images/development/passkey/password-generator.png",
@@ -40,14 +45,19 @@
           "caption": "The custom password generator page"
         },
         {
-          "src": "./images/development/passkey/logs.png",
-          "alt": "Upsilon Passkey logs page",
-          "caption": "The logs page"
+          "src": "./images/development/passkey/activities.png",
+          "alt": "Upsilon Passkey activities page",
+          "caption": "The activities page"
         },
         {
-          "src": "./images/development/passkey/warnings.png",
-          "alt": "Upsilon Passkey warnings page",
-          "caption": "The warnings page"
+          "src": "./images/development/passkey/alerts.png",
+          "alt": "Upsilon Passkey alerts page",
+          "caption": "The alerts page"
+        },
+        {
+          "src": "./images/development/passkey/identifiers.png",
+          "alt": "Upsilon Passkey identifiers filter",
+          "caption": "The identifiers filter"
         }
       ]
     },
